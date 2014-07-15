@@ -78,6 +78,9 @@ source_ip = attacker
 destin_ip = victim  
 ```
 
+**Problem:**
+* in a case where the job sensor is detect C&C or Vulnerable systems, in which key (source_ip/destination_ip) should sensor filled?
+
 ### Event Type Semantics
 
 ```
@@ -87,6 +90,13 @@ source_ip = victim
 destin_ip = atacker  
 ```
 
+**Problem:**
+* visualization, search for malicious activity, etc.., it will be more difficult to select all IPs related to victim systems and all IPs related to attackers systems.
+
+**Example (select all attackers):**
+```
+search index=ACDC | list events (if type="ddos-bot": select source_ip ; if type="malicious-url": select ...)
+```
 
 
 
