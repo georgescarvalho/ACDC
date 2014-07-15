@@ -1,4 +1,4 @@
-# Global Harmonization
+# Global Fields Harmonization
 
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
@@ -24,7 +24,7 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 }
 ```
 
-## DDoS Harmonization
+## DDoS Fields Harmonization
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |source_ip|[ipv4/ipv6]|-|SHOULD|193.136.2.192|-|
