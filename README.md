@@ -19,18 +19,18 @@
 
 |Title|Field|Defined Values|Level Req.|
 |:---:|:---:|:---:|:---:|
-|Event Timestamp|source_time|<dynamic>|MUST|
+|Event Timestamp|source_time|-dynamic-|MUST|
 |Key|key|ip|MUST|
 |Type|type|ddos-bot|MUST|
-|Source IP|source_ip|<dynamic>|MUST|
+|Source IP|source_ip|-dynamic|MUST|
 
 ### Dataset: C&C (DOMAIN MUST)
 |Title|Field|Defined Values|Level Req.|
 |:---:|:---:|:---:|:---:|
-|Event Timestamp|source_time|<dynamic>|MUST|
-|Key|key|domain|MUST|
-|Type|type|ddos-c&c|MUST|
-|Source Domain|source_domain|<dynamic>|MUST|
+|Event Timestamp|source_time|-dynamic-|MUST|
+|Key|key|"domain"|MUST|
+|Type|type|"ddos-c&c"|MUST|
+|Source Domain|source_domain|-dynamic-|MUST|
 
 
 ### Cneas
