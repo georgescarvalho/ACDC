@@ -9,6 +9,7 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |description|string|-|MUST|-|Free text characterising the report and should be used for human readable|
 
 **Note:** Should we remove 'key' field. Is seems redundant to have a key and then define the value for that key.
+
 **Example:**
 ```
 {
