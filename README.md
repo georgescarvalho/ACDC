@@ -27,11 +27,11 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 ## DDoS Fields Harmonization
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
-|source_ip|[ipv4/ipv6]|-|SHOULD*|193.136.2.192|-|
+|source_ip|[ipv4/ipv6]|-|SHOULD *|193.136.2.192|-|
 |source_port|int|-|SHOULD|4234|-|
-|destination_ip|[ipv4/ipv6]|-|SHOULD*|193.136.100.192|-|
+|destination_ip|[ipv4/ipv6]|-|SHOULD *|193.136.100.192|-|
 |destination_port|int|-|SHOULD|53|-|
-|domain|RFC123|-|SHOULD*|www.botfree.eu|-|
+|domain|RFC123|-|SHOULD *|www.botfree.eu|-|
 |transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
 
 ∗ At least one of these fields selected MUST be defined. This "semantic" should be reflected in **Global Fields Harmonization**
