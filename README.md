@@ -1,12 +1,27 @@
 # Global
 
+**JSON Example**
+```
+{
+ "source_time": "2014-07-15T00:16:29+00:00",
+ "key": "ip",
+ "type": "ddos-bot",
+ "confidence": "low",
+ "description": "This is an event related to DoS attack...",
+ "source_ip": "192.13.6.215",
+ "destination_ip": "193.132.123.2",
+ "transport_protocol": "udp",
+}
+```
+
+
 |Title|Field|Format|Defined Values|Level Req.|Example|Description|
 |:---:|:---:|:---:|:---:|:---:|:---:|:-----------:|
 |Event Timestamp|source_time|datetime(ISO8601)|-|MUST|2014-07-15T00:16:29+00:00||
 |Key|key|string|["ip"/"domain"/"url"/"email"/"uri"]|MUST|domain|....|
 |Type|type|string|[check sensors type values](http://nowhere.com)|MUST|malicious-website|....|
 |Confidence|confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|....|
-|Description|description|string|-|MUST|-|Free text characterising the report and should be used for humana readable|
+|Description|description|string|-|MUST|-|Free text characterising the report and should be used for human readable|
 
 ## DDoS Global
 |Title|Field|Format|Defined Values|Level Req.|Example|Description|
@@ -26,7 +41,10 @@
 |Key|key|ip|MUST|
 |Type|type|"ddos-bot"|MUST|
 |Source IP|source_ip|-dynamic-|MUST|
+|Destination IP|destination_ip|-dynamic-|MUST|
 |Transport Protocol|transport_protocol|-dynamic-|MUST|
+|Description|description|-dynamic|MUST|
+|Confidence|confidence|sensor is LOW|MUST|
 
 
 ### Dataset: C&C (DOMAIN MUST)
@@ -36,7 +54,7 @@
 |Key|key|"domain"|MUST|
 |Type|type|"ddos-c&c"|MUST|
 |Source Domain|source_domain|(dynamic)|MUST|
-
+|Description|description|-dynamic|MUST|
 
 ### Cneas
 |Source IP|source_ip|[ipv4/ipv6]|SHOULD|depends on network connection|
