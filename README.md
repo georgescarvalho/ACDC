@@ -6,7 +6,7 @@
 |Key|key|string|["ip"/"domain"/"url"/"email"/"uri"]|MUST|domain|....|
 |Type|type|string|[check sensors type values](http://nowhere.com)|MUST|malicious-website|....|
 |Confidence|confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|....|
-|Description|description|string|-|MUST|Free text characterising the report and should be used for humana readable|
+|Description|description|string|-|MUST|-|Free text characterising the report and should be used for humana readable|
 
 ## DDoS Global
 |Title|Field|Format|Defined Values|Level Req.|Example|Description|
