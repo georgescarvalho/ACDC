@@ -10,10 +10,10 @@
 |Title|Field|Format|Defined Values|Level Req.|Example|Description|
 |:---:|:---:|:---:|:---:|:---:|:---:|:-----------:|
 |Source IP|source_ip|[ipv4/ipv6]|-|SHOULD|193.136.2.192|.---|
-|Source Port|source_port|int|-|SHOULD|193.136.2.192|.---|
+|Source Port|source_port|int|-|SHOULD|4234|.---|
 |Destination IP|destination_ip|[ipv4/ipv6]|-|SHOULD|193.136.100.192|.---|
-|Destination Port|destination_port|int|-|SHOULD|193.136.100.192|.---|
-|Domain|domain|RFC123|-|SHOULD|193.136.100.192|.---|
+|Destination Port|destination_port|int|-|SHOULD|53|.---|
+|Domain|domain|RFC123|-|SHOULD|www.botfree.eu|.---|
 
 ### Dataset: Bot (IP Must)
 
