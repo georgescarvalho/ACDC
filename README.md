@@ -8,7 +8,7 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|....|
 |description|string|-|MUST|-|Free text characterising the report and should be used for human readable|
 
-**Note:** Should we remove 'key' field. Is seems redundant to have a key and then define the value for that key.
+**Note:** Should we remove 'key' field? Is seems redundant to have a key and then define the value for that key.
 
 **Example:**
 ```
