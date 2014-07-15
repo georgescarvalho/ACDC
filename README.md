@@ -51,7 +51,7 @@ Field|Defined Values|Level Req.|
 |destination_ip|-dynamic-|MUST|
 |transport_protocol|-dynamic-|MUST|
 |description|-dynamic|MUST|
-|confidence|sensor is LOW|MUST|
+|confidence|MEDIUM|MUST|
 
 **JSON Example**
 ```
