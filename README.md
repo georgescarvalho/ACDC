@@ -1,20 +1,5 @@
 # Global
 
-**JSON Example**
-```
-{
- "source_time": "2014-07-15T00:16:29+00:00",
- "key": "ip",
- "type": "ddos-bot",
- "confidence": "low",
- "description": "This is an event related to DoS attack...",
- "source_ip": "192.13.6.215",
- "destination_ip": "193.132.123.2",
- "transport_protocol": "udp",
-}
-```
-
-
 |Title|Field|Format|Defined Values|Level Req.|Example|Description|
 |:---:|:---:|:---:|:---:|:---:|:---:|:-----------:|
 |Event Timestamp|source_time|datetime(ISO8601)|-|MUST|2014-07-15T00:16:29+00:00||
@@ -33,8 +18,9 @@
 |Domain|domain|RFC123|-|SHOULD|www.botfree.eu|-|
 |Transport Protocol|transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
 
-### Dataset: Bot (IP Must)
+### Case: Bot (IP Must)
 
+**Dataset**
 |Title|Field|Defined Values|Level Req.|
 |:---:|:---:|:---:|:---:|
 |Event Timestamp|source_time|(dynamic)|MUST|
@@ -45,6 +31,20 @@
 |Transport Protocol|transport_protocol|-dynamic-|MUST|
 |Description|description|-dynamic|MUST|
 |Confidence|confidence|sensor is LOW|MUST|
+
+**JSON Example**
+```
+{
+ "source_time": "2014-07-15T00:16:29+00:00",
+ "key": "ip",
+ "type": "ddos-bot",
+ "confidence": "low",
+ "description": "This is an event related to DoS attack...",
+ "source_ip": "192.13.6.215",
+ "destination_ip": "193.132.123.2",
+ "transport_protocol": "udp",
+}
+```
 
 
 ### Dataset: C&C (DOMAIN MUST)
