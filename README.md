@@ -2,7 +2,7 @@
 
 |Title|Field|Format|Defined Values|Level Req.|Example|Description|
 |---|---|---|---|---|---|-----------|
-|Event Timestamp|source_time|datetime(ISO8601)|-|MUST|2014-07-15T00:16:29+00:00||
+|Event Timestamp|timestamp|datetime(ISO8601)|-|MUST|2014-07-15T00:16:29+00:00||
 |Key|key|string|["ip"/ "domain"/ "url"/ "email"/ "uri"]|MUST|domain|....|
 |Type|type|string|[check sensors type values](http://nowhere.com)|MUST|malicious-website|....|
 |Confidence|confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|....|
