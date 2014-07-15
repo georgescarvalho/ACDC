@@ -21,6 +21,7 @@
 ### Case: Bot (IP Must)
 
 **Dataset**
+
 |Title|Field|Defined Values|Level Req.|
 |:---:|:---:|:---:|:---:|
 |Event Timestamp|source_time|(dynamic)|MUST|
@@ -42,7 +43,7 @@
  "description": "This is an event related to DoS attack...",
  "source_ip": "192.13.6.215",
  "destination_ip": "193.132.123.2",
- "transport_protocol": "udp",
+ "transport_protocol": "udp"
 }
 ```
 
