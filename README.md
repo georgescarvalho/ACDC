@@ -59,7 +59,7 @@ Field|Defined Values|Level Req.|
  "source_time": "2014-07-15T00:16:29+00:00",
  "key": "ip",
  "type": "ddos-bot",
- "confidence": "low",
+ "confidence": "medium",
  "description": "This is an event related to DoS attack...",
  "source_ip": "192.13.6.215",
  "destination_ip": "193.132.123.2",
