@@ -34,7 +34,7 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |domain|RFC123|-|SHOULD*|www.botfree.eu|-|
 |transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
 
-** ∗ ** this is
+∗ At least one of these fields selected MUST be defined. This "semantic" should be reflected in **Global Fields Harmonization**
 
 ### Case: Bot
 
