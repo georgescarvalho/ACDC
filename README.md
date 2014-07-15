@@ -18,7 +18,9 @@
 |Domain|domain|RFC123|-|SHOULD|www.botfree.eu|-|
 |Transport Protocol|transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
 
-### Case: Bot (IP Must)
+### Case: Bot
+
+This case present a case where an IP is a MUST and how all dataset behaves based on that.
 
 **Dataset**
 
@@ -48,7 +50,32 @@
 ```
 
 
-### Dataset: C&C (DOMAIN MUST)
+# Data Semantic Analysis
+
+### Network Semantic
+
+```
+ddos victim <- ddos attacker
+source_ip = attacker
+destin_ip = victim  
+```
+
+### Event Type Semantics
+
+```
+tipo = "ddos-victim"
+ddos victim <- ddos attacker
+source_ip = victim
+destin_ip = atacker  
+```
+
+
+
+
+# DEPRECATED
+
+### [DEPRECATED] Dataset: C&C (DOMAIN MUST)
+
 |Title|Field|Defined Values|Level Req.|
 |:---:|:---:|:---:|:---:|
 |Event Timestamp|source_time|(dynamic)|MUST|
@@ -56,21 +83,3 @@
 |Type|type|"ddos-c&c"|MUST|
 |Source Domain|source_domain|(dynamic)|MUST|
 |Description|description|-dynamic|MUST|
-
-### Cneas
-|Source IP|source_ip|[ipv4/ipv6]|SHOULD|depends on network connection|
-|Destination IP|destination_ip|[ipv4/ipv6]|MUST|depends on network connection|
-
-Filosofia Network
-===========
-ddos victim <- ddos attacker
-source_ip = attacker
-destin_ip = victim  
-
-
-Filosofia Tipo
-===========
-tipo = "ddos-victim"
-ddos victim <- ddos attacker
-source_ip = victim
-destin_ip = atacker  
