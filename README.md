@@ -70,7 +70,7 @@ Field|Defined Values|Level Req.|
 
 # Data Semantic Analysis
 
-### Network Semantic
+### Network Semantics
 
 ```
 ddos victim <- ddos attacker
