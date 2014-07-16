@@ -3,10 +3,8 @@
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |timestamp|datetime(ISO8601)|-dynamic-|MUST|2014-07-15T00:16:29+00:00||
-
 |source_key|string|["ip"/ "domain"/ "url"/ "email"/ "uri" / "sample"]|MUST|domain|....|
 |source_value|string|-dynamic-|MUST|-dynamic-|...|
-
 |type|string|[check sensors type values](http://nowhere.com)|MUST|malicious-website|....|
 |confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|....|
 |description|string|-dynamic-|MUST|-dynamic-|Free text characterising the report and should be used for human readable|
