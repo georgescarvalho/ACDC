@@ -3,26 +3,26 @@
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |sensor|string|["ddos" / "spam" / "website" / "fastflux" / "mobile"]|MUST|mobile|....|
-|timestamp|datetime(ISO8601)|-dynamic-|MUST|2014-07-15T00:16:29+00:00||
+|timestamp|datetime(ISO8601)|(dynamic)|MUST|2014-07-15T00:16:29+00:00||
 |source_key|string|["ip"/ "domain"/ "url"/ "email"/ "uri" / "sample"]|MUST|domain|....|
-|source_value|string|-dynamic-|MUST|-dynamic-|...|
+|source_value|string|(dynamic)|MUST|(dynamic)|...|
 |type|string|[check sensors type values](http://nowhere.com)|MUST|malicious-website|....|
 |confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|....|
-|description|string|-dynamic-|MUST|-dynamic-|Free text characterising the report and should be used for human readable|
+|description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
 
 
 ## DDoS Sensor Fields Harmonization
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |source_key|string|"ip"|MUST|"ip"|-|
-|source_value|[ipv4/ipv6]|-dynamic-|MUST|193.136.2.192|-|
+|source_value|[ipv4/ipv6]|(dynamic)|MUST|193.136.2.192|-|
 |source_port|int|-dynamic|SHOULD|4234|-|
 |destination_key|string|"ip"|SHOULD|"ip"|-|
-|destination_value|[ipv4/ipv6]|-dynamic-|SHOULD|34.34.2.192|-|
-|destination_port|int|-dynamic-|SHOULD|53|-|
-|type|string|["bot" / "c&c"]|-dynamic-|MUST|"ddos-bot"|classification of the event...|
+|destination_value|[ipv4/ipv6]|(dynamic)|SHOULD|34.34.2.192|-|
+|destination_port|int|(dynamic)|SHOULD|53|-|
+|type|string|["bot" / "c&c"]|(dynamic)|MUST|"ddos-bot"|classification of the event...|
 |transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
-|asn|int|-dynamic-|SHOULD|1930|Autonous System Number|
+|asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
 
 
 
@@ -37,17 +37,17 @@ Field|Defined Values|Level Req.|
 |sensor|"ddos"|MUST|
 |timestamp|(dynamic)|MUST|
 |source_key|"ip"|MUST|
-|source_value|-dynamic-|MUST|
+|source_value|(dynamic)|MUST|
 |type|"bot"|MUST|
 |confidence|MEDIUM|MUST|
 |description|"DoS Attack from source to destination"|MUST|
 ||||
-|source_port|-dynamic-|MUST|
+|source_port|(dynamic)|MUST|
 |destination_key|"ip"|MUST|
-|destination_value|-dynamic-|MUST|
-|destination_port|-dynamic-|MUST|
-|transport_protocol|-dynamic-|MUST|
-|asn|-dynamic-|SHOULD|
+|destination_value|(dynamic)|MUST|
+|destination_port|(dynamic)|MUST|
+|transport_protocol|(dynamic)|MUST|
+|asn|(dynamic)|SHOULD|
 
 **JSON Example**
 
