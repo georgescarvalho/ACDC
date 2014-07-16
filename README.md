@@ -13,15 +13,17 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 
 ## Bot Detection Reports Fields Harmonization
 
+**Note:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
+
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |source_key|string|"ip"|MUST|"ip"|-|
 |source_value|[ipv4/ipv6]|(dynamic)|MUST|19.12.12.213|-|
 |source_port|int|-dynamic|SHOULD|246|-|
-|destination_key|string|"ip"|SHOULD|"ip"|-|
-|destination_value|[ipv4/ipv6]|(dynamic)|SHOULD|34.34.2.192|-|
+|destination_key|string|"ip"|MUST|"ip"|-|
+|destination_value|[ipv4/ipv6]|(dynamic)|MUST|34.34.2.192|-|
 |destination_port|int|(dynamic)|SHOULD|53|-|
-|type|string|["bot" / "c&c"]|(dynamic)|MUST|"ddos-bot"|classification of the event...|
+|type|string|["bot"]|(dynamic)|MUST|"bot"|"Infected machine connected to C&C server."|
 |transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
 |asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
 
