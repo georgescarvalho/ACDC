@@ -11,7 +11,7 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
 
 
-## Bot Detection Reports
+## Bot Detection Reports Fields Harmonization
 
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
@@ -26,7 +26,7 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
 
 
-## C&C Detection Reports
+## C&C Detection Reports Fields Harmonization
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |source_key|string|"ip"|MUST|"ip"|-|
