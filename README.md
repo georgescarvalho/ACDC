@@ -23,19 +23,18 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |asn|int|-dynamic-|SHOULD|1930|Autonous System Number|
 
 
-### Case: Bot
-
-This case present a case where an IP is a MUST and how all dataset behaves based on that.
+### Case: Report a Bot connected to C&C
 
 **Dataset**
 
 Field|Defined Values|Level Req.|
 |---|---|---|
-|source_time|(dynamic)|MUST|
-|key|ip|MUST|
+|timestamp|(dynamic)|MUST|
+|source_key|"ip"|MUST|
+|source_value|-dynamic-|MUST|
+|destination_key|"ip"|MUST|
+|destination_value|-dynamic-|MUST|
 |type|"ddos-bot"|MUST|
-|source_ip|-dynamic-|MUST|
-|destination_ip|-dynamic-|MUST|
 |transport_protocol|-dynamic-|MUST|
 |description|-dynamic|MUST|
 |confidence|MEDIUM|MUST|
@@ -43,16 +42,46 @@ Field|Defined Values|Level Req.|
 **JSON Example**
 ```
 {
- "source_time": "2014-07-15T00:16:29+00:00",
- "key": "ip",
+ "timestamp": "2014-07-15T00:16:29+00:00",
+ "source_key": "ip",
+ "source_value": "192.13.6.215",
+ "destination_key": "ip",
+ "destination_value": "2.2.6.215", 
  "type": "ddos-bot",
- "confidence": "medium",
+ "transport_protocol": "udp",
  "description": "This is an event related to DoS attack...",
- "source_ip": "192.13.6.215",
- "destination_ip": "193.132.123.2",
- "transport_protocol": "udp"
+ "confidence": "medium",
 }
 ```
+
+### Case: Report a C&C
+
+**Dataset**
+
+Field|Defined Values|Level Req.|
+|---|---|---|
+|timestamp|(dynamic)|MUST|
+|source_key|"ip"|MUST|
+|source_value|-dynamic-|MUST|
+|type|"ddos-c&c"|MUST|
+|description|-dynamic|MUST|
+|confidence|MEDIUM|MUST|
+
+**JSON Example**
+```
+{
+ "timestamp": "2014-07-15T00:16:29+00:00",
+ "source_key": "ip",
+ "source_value": "2.2.6.215",
+ "type": "ddos-c&c",
+ "description": "This is an event related to DoS attack...",
+ "confidence": "medium",
+}
+```
+
+
+
+
 
 
 # Data Semantic Analysis
@@ -86,15 +115,3 @@ search index=ACDC | list events (if type="ddos-bot": select source_ip ; if type=
 ```
 
 
-
-# DEPRECATED
-
-### [DEPRECATED] Dataset: C&C (DOMAIN MUST)
-
-|Title|Field|Defined Values|Level Req.|
-|:---:|:---:|:---:|:---:|
-|Event Timestamp|source_time|(dynamic)|MUST|
-|Key|key|"domain"|MUST|
-|Type|type|"ddos-c&c"|MUST|
-|Source Domain|source_domain|(dynamic)|MUST|
-|Description|description|-dynamic|MUST|
