@@ -28,7 +28,7 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 
 ### Case: Report an Dos Attack.
 
-**Note:** Source IP of attack must be inserted in source_value and destination IP (victim) must be inserted in destination_value .
+**Note:** Source IP of attack must be inserted in source_value and 'destination IP' (victim) must be inserted in 'destination_value'.
 
 **Dataset**
 
