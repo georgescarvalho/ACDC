@@ -11,7 +11,37 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
 
 
-## DDoS Sensor Fields Harmonization
+## Bot Detection Reports
+
+Field|Format|Defined Values|Level Req.|Example|Field Description|
+|---|---|---|---|---|-----------|
+|source_key|string|"ip"|MUST|"ip"|-|
+|source_value|[ipv4/ipv6]|(dynamic)|MUST|19.12.12.213|-|
+|source_port|int|-dynamic|SHOULD|246|-|
+|destination_key|string|"ip"|SHOULD|"ip"|-|
+|destination_value|[ipv4/ipv6]|(dynamic)|SHOULD|34.34.2.192|-|
+|destination_port|int|(dynamic)|SHOULD|53|-|
+|type|string|["bot" / "c&c"]|(dynamic)|MUST|"ddos-bot"|classification of the event...|
+|transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
+|asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
+
+
+## C&C Detection Reports
+Field|Format|Defined Values|Level Req.|Example|Field Description|
+|---|---|---|---|---|-----------|
+|source_key|string|"ip"|MUST|"ip"|-|
+|source_value|[ipv4/ipv6]|(dynamic)|MUST|193.136.2.192|-|
+|source_port|int|-dynamic|SHOULD|4234|-|
+|destination_key|string|"ip"|SHOULD|"ip"|-|
+|destination_value|[ipv4/ipv6]|(dynamic)|SHOULD|34.34.2.192|-|
+|destination_port|int|(dynamic)|SHOULD|53|-|
+|type|string|["bot" / "c&c"]|(dynamic)|MUST|"ddos-bot"|classification of the event...|
+|transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
+|asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
+
+
+
+## DDoS Reports Fields Harmonization
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |source_key|string|"ip"|MUST|"ip"|-|
