@@ -3,7 +3,7 @@
 |Section|Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|---|-----------|
 |Sensor|sensor_name|string|["thug", "glastopf", "dionaea", ...]|MUST|thug|Sensor Name|
-|---|sensor_type|string|["ddos", "spam", "website", "fastflux", "mobile"]|MUST|mobile|Sensor Type|
+ |sensor_type|string|["ddos", "spam", "website", "fastflux", "mobile"]|MUST|mobile|Sensor Type|
 |Section|type|string|[check sensors type values](http://nowhere.com)|MUST|malicious-website|....|
 |Section|description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
 |Section|timestamp|datetime(ISO8601)|(dynamic)|MUST|2014-07-15T00:16:29+00:00|Event timestamp|
