@@ -16,7 +16,7 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |source_key|string|"ip"|MUST|"ip"|-|
 |source_value|[ipv4/ipv6]|-dynamic-|MUST|193.136.2.192|-|
 |source_port|int|-dynamic|SHOULD|4234|-|
-|destination_key|string|"ip"|MUST|"ip"|-|
+|destination_key|string|"ip"|SHOULD|"ip"|-|
 |destination_value|[ipv4/ipv6]|-dynamic-|SHOULD|34.34.2.192|-|
 |destination_port|int|-dynamic-|SHOULD|53|-|
 |transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|Thissfield is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
