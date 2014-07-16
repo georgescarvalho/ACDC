@@ -2,9 +2,9 @@
 
 |Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
-|sensor_name|string|["thug", "glastopf", "dionaea", ...]|MUST|thug|Sensor Name|
-|sensor_type|string|["ddos", "spam", "website", "fastflux", "mobile"]|MUST|mobile|Sensor Type|
-|type|string|[check sensors type values](http://nowhere.com)|MUST|malicious-website|....|
+|sensor_name|string|["thug", "glastopf", "dionaea", ...]|MUST|"thug"|Sensor Name|
+|sensor_type|string|["ddos", "spam", "website", "fastflux", "mobile"]|MUST|"mobile"|Sensor Type|
+|type|string|[check sensors type values](http://nowhere.com)|MUST|"malicious"|....|
 |description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
 |timestamp|datetime(ISO8601)|(dynamic)|MUST|2014-07-15T00:16:29+00:00|Event timestamp|
 |source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|MUST|domain|....|
