@@ -18,28 +18,17 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |source_key|string|"ip"|MUST|"ip"|-|
-|source_value|[ipv4/ipv6]|(dynamic)|MUST|19.12.12.213|-|
-|source_port|int|-dynamic|SHOULD|246|-|
+|source_value|[ipv4/ipv6]|(dynamic)|MUST|19.12.12.213|Bot ip|
+|source_port|int|(dynamic)|SHOULD|246|-|
 |destination_key|string|"ip"|MUST|"ip"|-|
-|destination_value|[ipv4/ipv6]|(dynamic)|MUST|34.34.2.192|-|
+|destination_value|[ipv4/ipv6]|(dynamic)|MUST|34.34.2.192|C&C ip|
 |destination_port|int|(dynamic)|SHOULD|53|-|
 |type|string|["bot"]|(dynamic)|MUST|"bot"|"Infected machine connected to C&C server."|
 |transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
-|asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
-
+|source_asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
 
 ## C&C Detection Reports Fields Harmonization
 Field|Format|Defined Values|Level Req.|Example|Field Description|
-|---|---|---|---|---|-----------|
-|source_key|string|"ip"|MUST|"ip"|-|
-|source_value|[ipv4/ipv6]|(dynamic)|MUST|193.136.2.192|-|
-|source_port|int|-dynamic|SHOULD|4234|-|
-|destination_key|string|"ip"|SHOULD|"ip"|-|
-|destination_value|[ipv4/ipv6]|(dynamic)|SHOULD|34.34.2.192|-|
-|destination_port|int|(dynamic)|SHOULD|53|-|
-|type|string|["bot" / "c&c"]|(dynamic)|MUST|"ddos-bot"|classification of the event...|
-|transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
-|asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
 
 
 
@@ -47,14 +36,14 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |source_key|string|"ip"|MUST|"ip"|-|
-|source_value|[ipv4/ipv6]|(dynamic)|MUST|193.136.2.192|-|
+|source_value|[ipv4/ipv6]|(dynamic)|MUST|193.136.2.192|Attacker IP|
 |source_port|int|-dynamic|SHOULD|4234|-|
 |destination_key|string|"ip"|SHOULD|"ip"|-|
-|destination_value|[ipv4/ipv6]|(dynamic)|SHOULD|34.34.2.192|-|
+|destination_value|[ipv4/ipv6]|(dynamic)|SHOULD|34.34.2.192|Victim IP|
 |destination_port|int|(dynamic)|SHOULD|53|-|
 |type|string|["bot" / "c&c"]|(dynamic)|MUST|"ddos-bot"|classification of the event...|
 |transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
-|asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
+|source_asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
 
 
 
@@ -79,7 +68,7 @@ Field|Defined Values|Level Req.|
 |destination_value|(dynamic)|MUST|
 |destination_port|(dynamic)|MUST|
 |transport_protocol|(dynamic)|MUST|
-|asn|(dynamic)|SHOULD|
+|source_asn|(dynamic)|SHOULD|
 
 **JSON Example**
 
@@ -97,7 +86,7 @@ Field|Defined Values|Level Req.|
  "destination_value": "192.80.6.215", 
  "destination_port": "22",
  "transport_protocol": "udp",
- "asn": "1930"
+ "source_asn": "1930"
 }
 ```
 
