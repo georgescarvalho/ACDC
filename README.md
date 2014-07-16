@@ -3,10 +3,11 @@
 Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |timestamp|datetime(ISO8601)|-|MUST|2014-07-15T00:16:29+00:00||
-|key|string|["ip"/ "domain"/ "url"/ "email"/ "uri"]|MUST|domain|....|
+|source_key|string|["ip"/ "domain"/ "url"/ "email"/ "uri" / "sample"]|MUST|domain|....|
+|source_value|string|-dynamic-|MUST|-dynamic-|...|
 |type|string|[check sensors type values](http://nowhere.com)|MUST|malicious-website|....|
 |confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|....|
-|description|string|-|MUST|-|Free text characterising the report and should be used for human readable|
+|description|string|-dynamic-|MUST|-dynamic-|Free text characterising the report and should be used for human readable|
 
 **Note:** Should we remove 'key' field? Is seems redundant to have a key and then define the value for that key.
 
@@ -33,6 +34,7 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |destination_port|int|-|SHOULD|53|-|
 |domain|RFC123|-|SHOULD *|www.botfree.eu|-|
 |transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|Thissfield is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
+|asn|int|-|SHOULD|1930|Autonous System Number|
 
 ∗ At least one of these fields selected MUST be defined. This "semantic" should be reflected in **Global Fields Harmonization**
 
