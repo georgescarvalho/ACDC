@@ -78,7 +78,7 @@ Field|Defined Values|Level Req.|
  "timestamp": "2014-07-15T00:16:29+00:00",
  "source_key": "ip",
  "source_value": "192.135.6.215",
- "type": "bot",
+ "type": "atacker",
  "confidence": "medium",
  "description": "DoS Attack from source to destination", 
  "source_port": "53",
