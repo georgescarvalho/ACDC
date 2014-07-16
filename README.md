@@ -31,8 +31,8 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |destination_key|string|"ip"|MUST|"ip"|-|
 |destination_value|[ipv4/ipv6]|(dynamic)|MUST|34.34.2.192|C&C ip|
 |destination_port|int|(dynamic)|SHOULD|53|-|
-|type|string|["bot"]|(dynamic)|MUST|"bot"|"Infected machine connected to C&C server."|
-|transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give infroamtion about the attack for example attack by UDP Flooding...|
+|type|string|"bot"|(dynamic)|MUST|"bot"|"Infected machine connected to C&C server."|
+|transport_protocol|string|["TCP", "UDP, "ICMP"]|MUST|udp|This field is used to give infroamtion about the attack for example attack by UDP Flooding...|
 |source_asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
 
 ## C&C Detection Reports Fields Harmonization
@@ -49,8 +49,8 @@ Field|Format|Defined Values|Level Req.|Example|Field Description|
 |destination_key|string|"ip"|SHOULD|"ip"|-|
 |destination_value|[ipv4/ipv6]|(dynamic)|SHOULD|34.34.2.192|Victim IP|
 |destination_port|int|(dynamic)|SHOULD|53|-|
-|type|string|["bot" / "c&c"]|(dynamic)|MUST|"ddos-bot"|classification of the event...|
-|transport_protocol|string|[TCP/UDP/ICMP]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
+|type|string|["bot", "c&c"]|(dynamic)|MUST|"ddos-bot"|classification of the event...|
+|transport_protocol|string|["TCP", "UDP", "ICMP"]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
 |source_asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
 
 
