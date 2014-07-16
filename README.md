@@ -1,16 +1,16 @@
 # Global Fields Harmonization
 
-|Section|Field|Format|Defined Values|Level Req.|Example|Field Description|
-|---|---|---|---|---|---|-----------|
-|Sensor|sensor_name|string|["thug", "glastopf", "dionaea", ...]|MUST|thug|Sensor Name|
- |sensor_type|string|["ddos", "spam", "website", "fastflux", "mobile"]|MUST|mobile|Sensor Type|
-|Section|type|string|[check sensors type values](http://nowhere.com)|MUST|malicious-website|....|
-|Section|description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
-|Section|timestamp|datetime(ISO8601)|(dynamic)|MUST|2014-07-15T00:16:29+00:00|Event timestamp|
-|Section|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|MUST|domain|....|
-|Section|source_value|string|(dynamic)|MUST|(dynamic)|...|
-|Section|destination_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|MAY|domain|....|
-|Section|destination_value|string|(dynamic)|MAY|(dynamic)|...|
+|Field|Format|Defined Values|Level Req.|Example|Field Description|
+|---|---|---|---|---|-----------|
+|sensor_name|string|["thug", "glastopf", "dionaea", ...]|MUST|thug|Sensor Name|
+|sensor_type|string|["ddos", "spam", "website", "fastflux", "mobile"]|MUST|mobile|Sensor Type|
+|type|string|[check sensors type values](http://nowhere.com)|MUST|malicious-website|....|
+|description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
+|timestamp|datetime(ISO8601)|(dynamic)|MUST|2014-07-15T00:16:29+00:00|Event timestamp|
+|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|MUST|domain|....|
+|source_value|string|(dynamic)|MUST|(dynamic)|...|
+|destination_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|MAY|domain|....|
+|destination_value|string|(dynamic)|MAY|(dynamic)|...|
 
 
 **To Remove:**
