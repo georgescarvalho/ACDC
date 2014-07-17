@@ -2,8 +2,8 @@
 # Sensor Identification
 |Category|Sensor|Entity|
 |---|---|---|
-|ddos|DDoS Monitoring Tool|[[IF-IS]]|
-|ddos|Black-Holing | ```html <pre style="color: red">DE-CIX</pre>```  |
+|ddos|DDoS Monitoring Tool|IF-IS|
+|ddos|Black-Holing | DE-CIX |
 |ddos|(...) | (...)|
 ||||
 |website|initiative-S|ECO|
@@ -60,7 +60,7 @@ stflux|malicious content|
 |subcategory|string|[subcategories list](#events-classification)|MUST|"malicious content"|subclassification of the event...|
 |description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
 |timestamp|datetime(ISO8601)|(dynamic)|MUST|2014-07-15T00:16:29+00:00|Event timestamp|
-|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|MUST|domain|....|
+|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", `"MAC`]|MUST|domain|....|
 |source_value|string|(dynamic)|MUST|(dynamic)|...|
 |source_port|int|(dynamic)|MAY|246|-|
 |source_asn|int|(dynamic)|MAY|1930|Autonous System Number|
