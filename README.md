@@ -1,7 +1,7 @@
 # Dictionary
 
 <a name="sensor-identification"></a>
-## *Sensor Identification*
+### *Sensor Identification*
 |Category|Sensor|Entity|
 |---|---|---|
 |ddos|DDoS Monitoring Tool|IF-IS|
@@ -30,7 +30,7 @@
 |spam| (...) | (...)|
 
 <a name="events-classification"></a>
-## Events Classification
+### *Events Classification*
 
 |Category|SubCategory|
 |---|---|
@@ -52,7 +52,7 @@ stflux|malicious content|
 
 
 
-## Global Fields Harmonization
+### *Global Fields Harmonization*
 **Description:**(tentar descrever a tabela)
 
 |Field|Format|Defined Values|Level Req.|Example|Field Description|
