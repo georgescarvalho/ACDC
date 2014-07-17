@@ -12,7 +12,7 @@
 |website|Horga|ISCTI|
 |website|Skanna|INTECO|
 |website|Honeypot Sensor|CARNET|
-|spam| (...) | (...)|
+|website| (...) | (...)|
 ||||
 |fasstflux|Passive dns sensor| CARNET|
 |fasstflux|DNS Traffic Sensor| ATOS|
