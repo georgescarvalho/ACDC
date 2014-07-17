@@ -180,7 +180,7 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|[sensor list](#sensor-identification)|MUST|\<descrever\>|
+|sensor|["DDoS Monitoring Tool","Black-Holing", (...)] |MUST|\<descrever\>|
 |category|"ddos"|MUST||
 |subcategory|"flood"|MUST||
 |timestamp|(dynamic)|MUST||
