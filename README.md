@@ -2,21 +2,21 @@
 # Sensor Classification
 
 |Category|Sensor|Entity|
-|---|---|
-|ddos|thug|
-|ddos|glastopf|
-|ddos|dionaea|
-|||
-|website||
-|website||
-|website||
-|||
-|fasstflux|malicious content|
-|||
-|mobile|malware|
-|mobile|malicious content|
-|mobile|**event**|
-|||
+|---|---|---|
+|ddos|thug||
+|ddos|glastopf||
+|ddos|dionaea||
+||||
+|website|||
+|website|||
+|website|||
+||||
+|fasstflux|malicious content||
+||||
+|mobile|malware||
+|mobile|malicious content||
+|mobile|**event**||
+||||
 |spam|spamtrap|CARNET|
 |spam|spambot detector|TID|
 |spam|smartbot detector|TID|
