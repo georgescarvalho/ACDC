@@ -294,6 +294,7 @@ Field|Defined Values|Level Req.|Field description|
 }
 ```
 =
+# Validar a partir daqui
 #### Case: Report a Vulnerable Website.
 **Note:** TBD.
 
@@ -311,7 +312,21 @@ Field|Defined Values|Level Req.|Field description|
 |sample_hash|(dynamic)|MUST||
 |sample_filename|(dynamic)|MUST||
 
+**JSON Example**
 
+```
+{
+ "sensor": "Horga",
+ "category": "website",
+ "subcategory": "malware",
+ "timestamp": "2013-01-30T23:28:09+00:00",
+ "description": "Vulnerable website.", 
+ "source_key": "sample",
+ "source_value": "dGhpcyBpcyB0aGUgYmluYXJ5IHNhbXBsZSBlbmNvZGVk",
+ "sample_hash": "dbd014125a4bad51db85f27279f1040a",
+ "sample_filename": "best-antivirus.exe"
+}
+```
 
 
 =
