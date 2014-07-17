@@ -1,4 +1,29 @@
 <a name="events-classification"></a>
+# Sensor Classification
+|Category|Sensor|Entity|
+|---|---|
+|ddos|thug|
+|ddos|glastopf|
+|ddos|dionaea|
+|||
+|website||
+|website||
+|website||
+|||
+stflux|malicious content|
+|||
+|mobile|malware|
+|mobile|malicious content|
+|mobile|**event**|
+|||
+|spam|spamtrap|CARNET|
+|spam|spambot detector|TID|
+|spam|smartbot detector|TID|
+|spam|spam analysis tool|CERT-RO|
+|spam|AHPS|ATOS|
+|spam| (...) | (...)|
+
+
 # Events Classification
 
 |Category|SubCategory|
