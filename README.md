@@ -44,6 +44,8 @@
 |destination_asn|int|(dynamic)|MAY|1232|Autonous System Number|
 |transport_protocol|string|["tcp", "udp", "icmp"]|SHOULD|"udp"|This field is used to give infroamtion about the attack for example attack by UDP...|
 |protocol|string|["dns", "http, "ssh", etc..]|SHOULD|"http"|This field is used to give infroamtion about the attack for example attack though SSH|
+|sample_hash|string|["md5", "sha512"]|MAY|(dynamic)|Hash of the sample|
+|sample_filename|string|string|MAY|(dynamic)|Filename of the sample|
 
 
 **To Remove:**
@@ -227,6 +229,42 @@ Field|Defined Values|Level Req.|
  "transport_protocol": "tcp"
 }
 ```
+
+### Case: Report a Malware binary.
+
+**Note:** TBD.
+
+**Dataset**
+
+Field|Defined Values|Level Req.|
+|---|---|---|
+|sensor|"thug"|MUST|
+|category|"website"|MUST|
+|subcategory|"malware"|MUST|
+|timestamp|(dynamic)|MUST|
+|description|"Website found with malware binary."|MUST|
+|source_key|"sample"|MUST|
+|source_value|(dynamic)|MUST|
+|sample_hash|(dynamic)|MUST|
+|sample_filename|(dynamic)|MUST|
+
+
+**JSON Example**
+
+```
+{
+ "sensor": "thug",
+ "category": "website",
+ "subcategory": "malware",
+ "timestamp": "2013-01-30T23:28:09+00:00",
+ "description": "Website found with malware binary.", 
+ "source_key": "sample",
+ "source_value": "dGhpcyBpcyB0aGUgYmluYXJ5IHNhbXBsZSBlbmNvZGVk",
+ "sample_hash": "dbd014125a4bad51db85f27279f1040a",
+ "sample_filename": "best-antivirus.exe"
+}
+```
+
 
 
 
