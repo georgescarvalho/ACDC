@@ -43,7 +43,7 @@
 |destination_port|int|(dynamic)|MAY|53|-|
 |destination_asn|int|(dynamic)|MAY|1232|Autonous System Number|
 |transport_protocol|string|["tcp", "udp", "icmp"]|SHOULD|"udp"|This field is used to give infroamtion about the attack for example attack by UDP...|
-|protocol|string|["dns", "http, "ssh"]|SHOULD|""|This field is used to give infroamtion about the attack for example attack though SSH|
+|protocol|string|["dns", "http, "ssh", etc..]|SHOULD|"http"|This field is used to give infroamtion about the attack for example attack though SSH|
 
 
 **To Remove:**
