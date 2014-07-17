@@ -75,7 +75,7 @@ stflux|malicious content|
 |sample_hash|string|["md5", "sha512"]|MAY|(dynamic)|Hash of the sample|
 |sample_filename|string|string|MAY|(dynamic)|Filename of the sample|
 
-
+=
 **To Remove:**
 ```
 |confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|Level of confidence in source **(this value should not exist because CCH is who can decide in the central point)**|
