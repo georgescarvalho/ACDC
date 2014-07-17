@@ -1,3 +1,21 @@
+# Events Classification
+
+|Category|SubCategory|
+|---|---|
+|ddos|flood|
+|website|malware|
+|website|malicious content|
+|website|vulnerable|
+|fastflux|malicious content|
+|mobile|malware|
+|mobile|malicious content|
+|mobile|**event**|
+|spam|malware|
+|spam|malicious content|
+|spam|campaign|
+
+
+
 # Global Fields Harmonization
 
 |Field|Format|Defined Values|Level Req.|Example|Field Description|
@@ -27,7 +45,7 @@
 
 ## Bot Detection Reports Fields Harmonization
 
-**Note:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
+**Perspective:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
 
 **Dataset**
 
@@ -76,7 +94,7 @@ Field|Defined Values|Level Req.|
 
 ## C&C Detection Reports Fields Harmonization
 
-**Note:** C&C ip must be inserted in source_value.
+**Perspective:** C&C ip must be inserted in source_value.
 
 **Dataset**
 
@@ -116,7 +134,7 @@ Field|Defined Values|Level Req.|
 
 ### Case: Report an Dos Attack.
 
-**Note:** Source IP of attack must be inserted in source_value and 'destination IP' (victim) must be inserted in 'destination_value'.
+**Perspective:** Source IP of attack must be inserted in source_value and 'destination IP' (victim) must be inserted in 'destination_value'.
 
 **Dataset**
 
@@ -158,6 +176,52 @@ Field|Defined Values|Level Req.|
  "transport_protocol": "udp"
 }
 ```
+
+
+## Website Reports Fields Harmonization
+
+### Case: Report a Malicious Website.
+
+**Note:** TBD.
+
+**Dataset**
+
+Field|Defined Values|Level Req.|
+|---|---|---|
+|sensor|"thug"|MUST|
+|category|"website"|MUST|
+|subcategory|"malicious content"|MUST|
+|timestamp|(dynamic)|MUST|
+|description|"Website found with malicious content."|MUST|
+|source_key|"url"|MUST|
+|source_value|(dynamic)|MUST|
+|source_port|(dynamic)|MAY|
+|source_asn|(dynamic)|SHOULD|
+|protocol|"http"|MAY|
+|transport_protocol|(dynamic)|MAY|
+
+
+**JSON Example**
+
+```
+{
+ "sensor": "thug",
+ "category": "website",
+ "subcategory": "malicious content",
+ "timestamp": "2014-05-29T23:28:09+00:00",
+ "description": "Website found with malicious content.", 
+ "source_key": "url",
+ "source_value": "https://xasdda.xxxxx.com/pub.php",
+ "source_port": "443",
+ "source_asn": "8982",
+ "protocol": "http",
+ "transport_protocol": "tcp"
+}
+```
+
+
+
+
 
 
 
