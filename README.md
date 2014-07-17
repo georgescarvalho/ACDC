@@ -1,7 +1,7 @@
 # Dictionary
 
 <a name="sensor-identification"></a>
-## Sensor Identification
+## *Sensor Identification*
 |Category|Sensor|Entity|
 |---|---|---|
 |ddos|DDoS Monitoring Tool|IF-IS|
