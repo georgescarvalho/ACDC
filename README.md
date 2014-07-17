@@ -217,7 +217,7 @@ Field|Defined Values|Level Req.|Field description|
 }
 ```
 
-
+=
 ### *WEBSITE Reports Fields Harmonization*
 
 #### Case: Report a Malicious Website.
@@ -258,7 +258,7 @@ Field|Defined Values|Level Req.|Field description|
  "transport_protocol": "tcp"
 }
 ```
-
+=
 #### Case: Report a Malware binary.
 
 **Note:** TBD.
@@ -293,11 +293,28 @@ Field|Defined Values|Level Req.|Field description|
  "sample_filename": "best-antivirus.exe"
 }
 ```
+=
+#### Case: Report a Vulnerable Website.
+**Note:** TBD.
 
-#### Case: Report a Vulnerable binary.
+**Dataset**
+
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|
+|sensor|"Horga"|MUST|\<descrever\>
+|category|"website"|MUST|
+|subcategory|"vulnerable"|MUST|
+|timestamp|(dynamic)|MUST|
+|description|"Vulnerable website."|MUST|
+|source_key|"url"|MUST|
+|source_value|(dynamic)|MUST|
+|sample_hash|(dynamic)|MUST|
+|sample_filename|(dynamic)|MUST|
 
 
 
+
+=
 # Data Semantic Analysis
 
 ### Network Semantics
