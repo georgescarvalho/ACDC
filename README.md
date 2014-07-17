@@ -36,7 +36,7 @@ Field|Defined Values|Level Req.|
 |sensor|["thug", "glastopf", "dionaea", ...]|MUST|
 |category|["ddos", "website", "spam", "fastflux", "mobile"][link](http://)|MUST|
 |subcategory|"bot"|MUST|
-|description|"DoS Attack from source to destination"|MUST|
+|description|"Bot (infected system) connected to C&C server."|MUST|
 |timestamp|(dynamic)|MUST|
 |source_key|"ip"|MUST|
 |source_value|(dynamic)|MUST|
