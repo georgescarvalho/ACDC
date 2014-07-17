@@ -86,9 +86,9 @@ stflux|malicious content|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Description|
+Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|[sensor list](#sensor-identification)|MUST|<descrever>|
+|sensor|[sensor list](#sensor-identification)|MUST|\<descrever\>|
 |category|[categories list](#events-classification)|MUST||
 |subcategory|"bot"|MUST||
 |description|"Bot (infected system) connected to C&C server."|MUST||
