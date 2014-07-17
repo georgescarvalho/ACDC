@@ -228,7 +228,7 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|"Skanna"|MUST|MUST|\<descrever\>|
+|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|MUST|\<descrever\>|
 |category|"website"|MUST||
 |subcategory|"malicious content"|MUST||
 |timestamp|(dynamic)|MUST||
@@ -267,7 +267,7 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|"Horga"|MUST|\<descrever\>
+|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|\<descrever\>
 |category|"website"|MUST||
 |subcategory|"malware"|MUST||
 |timestamp|(dynamic)|MUST||
@@ -302,7 +302,7 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|"Horga"|MUST|\<descrever\>
+|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|\<descrever\>
 |category|"website"|MUST||
 |subcategory|"vulnerable"|MUST||
 |timestamp|(dynamic)|MUST||
