@@ -55,8 +55,7 @@ stflux|malicious content|
 
 |Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
-|sensor|string|[sensor list](#sensor-identification)|MUST|"website"|classification of the event...|
-|subcategory|string|[subcategories list](#events-classific|MUST|"thug"|Sensor Name|
+|sensor|string|[sensor list](#sensor-identification)|MUST|"DDoS Monitoring Tool"|sensor name...|
 |category|string|[categories list](#events-classification)|MUST|"website"|classification of the event...|
 |subcategory|string|[subcategories list](#events-classification)|MUST|"malicious content"|subclassification of the event...|
 |description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
