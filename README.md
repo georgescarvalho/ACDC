@@ -126,8 +126,7 @@ Field|Defined Values|Level Req.|
 |category|"ddos"|MUST|
 |subcategory|"flood"|MUST|
 |timestamp|(dynamic)|MUST|
-|confidence|MEDIUM|MUST|
-|description|"DoS Attack from source to destination"|MUST|
+|description|"DoS Attack from source to destination."|MUST|
 |source_key|"ip"|MUST|
 |source_value|(dynamic)|MUST|
 |source_port|(dynamic)|MUST|
@@ -147,7 +146,6 @@ Field|Defined Values|Level Req.|
  "category": "ddos",
  "subcategory": "flood",
  "timestamp": "2014-07-15T00:16:29+00:00",
- "confidence": "medium",
  "description": "DoS Attack from source to destination", 
  "source_key": "ip",
  "source_value": "192.135.6.215",
