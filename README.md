@@ -2,7 +2,7 @@
 # Sensor Identification
 |Category|Sensor|Entity|
 |---|---|---|
-|ddos|DDoS Monitoring Tool|IF-IS|
+|ddos|DDoS Monitoring Tool|[[IF-IS]]|
 |ddos|Black-Holing | ```html <pre style="color: red">DE-CIX</pre>```  |
 |ddos|(...) | (...)|
 ||||
