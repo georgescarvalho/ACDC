@@ -31,7 +31,7 @@
 |---|---|---|---|---|-----------|
 |sensor|string|["thug", "glastopf", "dionaea", ...]|MUST|"thug"|Sensor Name|
 |category|string|[categories list](#events-classification)|MUST|"website"|classification of the event...|
-|subcategory|string|[categories list](#events-classification)|(dynamic)|MUST|"flood"|subclassification of the event...|
+|subcategory|string|[categories list](#events-classification)|MUST|"malicious content"|subclassification of the event...|
 |description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
 |timestamp|datetime(ISO8601)|(dynamic)|MUST|2014-07-15T00:16:29+00:00|Event timestamp|
 |source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|MUST|domain|....|
