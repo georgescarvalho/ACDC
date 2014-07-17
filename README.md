@@ -51,6 +51,7 @@ stflux|malicious content|
 
 
 # Global Fields Harmonization
+**Description:**(tentar descrever a tabela)
 
 |Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
