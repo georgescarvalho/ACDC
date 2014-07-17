@@ -318,7 +318,7 @@ Field|Defined Values|Level Req.|Field description|
 {
  "sensor": "Horga",
  "category": "website",
- "subcategory": "malware",
+ "subcategory": "vulnerable",
  "timestamp": "2013-01-30T23:28:09+00:00",
  "description": "Vulnerable website.", 
  "source_key": "sample",
