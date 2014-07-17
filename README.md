@@ -294,7 +294,7 @@ Field|Defined Values|Level Req.|Field description|
 }
 ```
 =
-# Validar a partir daqui
+# Validar a partir daqui. Apenas estão as estruturas.
 #### Case: Report a Vulnerable Website.
 **Note:** TBD.
 
