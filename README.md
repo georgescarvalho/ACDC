@@ -23,7 +23,6 @@
 ||||
 |spam|Spamtrap|CARNET|
 |spam|Spambot detector|TID|
-|spam|Smartbot detector|TID|
 |spam|Spam analysis tool|CERT-RO|
 |spam|AHPS|ATOS|
 |spam| (...) | (...)|
@@ -88,7 +87,7 @@ stflux|malicious content|
 
 Field|Defined Values|Level Req.|
 |---|---|---|
-|sensor|["thug", "glastopf", "dionaea", ...]|MUST|
+|sensor|[sensor list](#sensor-identification)|MUST|
 |category|[categories list](#events-classification)|MUST|
 |subcategory|"bot"|MUST|
 |description|"Bot (infected system) connected to C&C server."|MUST|
