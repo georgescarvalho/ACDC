@@ -169,7 +169,7 @@ Field|Defined Values|Level Req.|Field description|
 }
 ```
 
-# Specific categories for DDOS
+# Specific categories
 ### *DDoS Reports Fields Harmonization*
 
 #### Case: Report an Dos Attack.
@@ -217,9 +217,8 @@ Field|Defined Values|Level Req.|Field description|
 }
 ```
 
-# Specific categories for Website
 
-### *Website Reports Fields Harmonization*
+### *WEBSITE Reports Fields Harmonization*
 
 #### Case: Report a Malicious Website.
 
@@ -260,7 +259,7 @@ Field|Defined Values|Level Req.|Field description|
 }
 ```
 
-### Case: Report a Malware binary.
+#### Case: Report a Malware binary.
 
 **Note:** TBD.
 
@@ -295,11 +294,7 @@ Field|Defined Values|Level Req.|Field description|
 }
 ```
 
-
-
-
-
-
+#### Case: Report a Vulnerable binary.
 
 
 
