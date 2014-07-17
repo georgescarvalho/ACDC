@@ -2,24 +2,29 @@
 # Sensor Identification
 |Category|Sensor|Entity|
 |---|---|---|
-|ddos|thug||
-|ddos|glastopf||
-|ddos|dionaea||
+|ddos|DDoS Monitoring Tool|IF-IS|
+|ddos|Black-Holing |DE-CIX|
+|ddos|(...) | (...)|
 ||||
-|website|||
-|website|||
-|website|||
+|website|initiative-S|ECO|
+|website|Horga|ISCTI|
+|website|Skanna|INTECO|
+|website|Honeypot Sensor|CARNET|
+|spam| (...) | (...)|
 ||||
-|fasstflux|malicious content||
+|fasstflux|Passive dns sensor| CARNET|
+|fasstflux|DNS Traffic Sensor| ATOS|
+|fasstflux|Flux Detect|INTECO|
+|fasstflux| (...) | (...)|
 ||||
-|mobile|malware||
-|mobile|malicious content||
-|mobile|**event**||
+|mobile|Suricata IDS|XLAB|
+|mobile|Conan mobile|INTECO|
+|mobile| (...) | (...)|
 ||||
-|spam|spamtrap|CARNET|
-|spam|spambot detector|TID|
-|spam|smartbot detector|TID|
-|spam|spam analysis tool|CERT-RO|
+|spam|Spamtrap|CARNET|
+|spam|Spambot detector|TID|
+|spam|Smartbot detector|TID|
+|spam|Spam analysis tool|CERT-RO|
 |spam|AHPS|ATOS|
 |spam| (...) | (...)|
 
