@@ -3,7 +3,7 @@
 |Category|Sensor|Entity|
 |---|---|---|
 |ddos|DDoS Monitoring Tool|IF-IS|
-|ddos|Black-Holing | ```DE-CIX  #005f00```|
+|ddos|Black-Holing | ```DE-CIX  // 005f00```|
 |ddos|(...) | (...)|
 ||||
 |website|initiative-S|ECO|
