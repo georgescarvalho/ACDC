@@ -4,15 +4,19 @@
 |---|---|
 |ddos|flood|
 |||
+|||
 |website|malware|
 |website|malicious content|
 |website|vulnerable|
 |||
+|||
 |fastflux|malicious content|
+|||
 |||
 |mobile|malware|
 |mobile|malicious content|
 |mobile|**event**|
+|||
 |||
 |spam|malware|
 |spam|malicious content|
