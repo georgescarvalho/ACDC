@@ -3,8 +3,8 @@
 |Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
 |sensor|string|["thug", "glastopf", "dionaea", ...]|MUST|"thug"|Sensor Name|
-|category|string|["ddos"]|(dynamic)|MUST|"ddos"|classification of the event...|
-|subcategory|string|["flood"]|(dynamic)|MUST|"flood"|subclassification of the event...|
+|category|string|["ddos", "website", "spam", "fastflux", "mobile"][link](http://)|(dynamic)|MUST|"ddos"|classification of the event...|
+|subcategory|string|["flood"][link](http://)|(dynamic)|MUST|"flood"|subclassification of the event...|
 |description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
 |timestamp|datetime(ISO8601)|(dynamic)|MUST|2014-07-15T00:16:29+00:00|Event timestamp|
 |source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|MUST|domain|....|
@@ -29,36 +29,47 @@
 
 **Note:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
 
-Field|Format|Defined Values|Level Req.|Example|Field Description|
-|---|---|---|---|---|-----------|
-|source_key|string|"ip"|MUST|"ip"|-|
-|source_value|[ipv4/ipv6]|(dynamic)|MUST|19.12.12.213|Bot ip|
-|destination_key|string|"ip"|MUST|"ip"|-|
-|destination_value|[ipv4/ipv6]|(dynamic)|MUST|34.34.2.192|C&C ip|
-|type|string|"bot"|(dynamic)|MUST|"bot"|"Infected machine connected to C&C server."|
-
-
 **Dataset**
 
 Field|Defined Values|Level Req.|
 |---|---|---|
-|sensor|"thug"|MUST|
-|category|"ddos"|MUST|
-|subcategory|"flood"|MUST|
-|timestamp|(dynamic)|MUST|
-|confidence|MEDIUM|MUST|
+|sensor|["thug", "glastopf", "dionaea", ...]|MUST|
+|category|["ddos", "website", "spam", "fastflux", "mobile"][link](http://)|MUST|
+|subcategory|"bot"|MUST|
 |description|"DoS Attack from source to destination"|MUST|
+|timestamp|(dynamic)|MUST|
 |source_key|"ip"|MUST|
 |source_value|(dynamic)|MUST|
-|source_port|(dynamic)|MUST|
+|source_port|(dynamic)|MAY|
 |source_asn|(dynamic)|SHOULD|
 |destination_key|"ip"|MUST|
 |destination_value|(dynamic)|MUST|
-|destination_port|(dynamic)|MUST|
-|destination_asn|(dynamic)|MAY|
-|transport_protocol|(dynamic)|MUST|
+|destination_port|(dynamic)|MAY|
+|destination_asn|(dynamic)|SHOULD|
+|protocol|(dynamic)|SHOULD|
+|transport_protocol|(dynamic)|SHOULD|
 
 
+**JSON Example**
+
+```
+{
+ "sensor": "thug",
+ "category": "ddos",
+ "subcategory": "bot",
+ "description": "Bot (infected system) connected to C&C server.", 
+ "timestamp": "2014-07-15T00:16:29+00:00",
+ "source_key": "ip",
+ "source_value": "192.135.6.215",
+ "source_port": "53653",
+ "source_asn": "1930",
+ "destination_key": "ip",
+ "destination_value": "192.80.6.215", 
+ "destination_port": "994",
+ "destination_asn": "19165",
+ "transport_protocol": "udp"
+}
+```
 
 
 
@@ -67,30 +78,41 @@ Field|Defined Values|Level Req.|
 
 **Note:** C&C ip must be inserted in source_value.
 
-Field|Format|Defined Values|Level Req.|Example|Field Description|
-|---|---|---|---|---|-----------|
-|source_key|string|"ip"|MUST|"ip"|-|
-|source_value|[ipv4/ipv6]|(dynamic)|MUST|19.12.12.213|Bot ip|
-|source_port|int|(dynamic)|SHOULD|246|-|
-|transport_protocol|string|["tcp", "udp", "icmp"]|SHOULD|"udp"|This field is used to give infroamtion about the attack for example attack by UDP...|
-|source_asn|int|(dynamic)|SHOULD|1967|Autonous System Number|
+**Dataset**
+
+Field|Defined Values|Level Req.|
+|---|---|---|
+|sensor|["thug", "glastopf", "dionaea", ...]|MUST|
+|category|["ddos", "website", "spam", "fastflux", "mobile"][link](http://)|MUST|
+|subcategory|"c&c"|MUST|
+|description|"C&C server found."|MUST|
+|timestamp|(dynamic)|MUST|
+|source_key|"ip"|MUST|
+|source_value|(dynamic)|MUST|
+|source_port|(dynamic)|MAY|
+|source_asn|(dynamic)|SHOULD|
+|protocol|(dynamic)|SHOULD|
+|transport_protocol|(dynamic)|SHOULD|
 
 
+**JSON Example**
+
+```
+{
+ "sensor": "thug",
+ "category": "ddos",
+ "subcategory": "c&c",
+ "description": "C&C server found.", 
+ "timestamp": "2014-07-15T00:16:29+00:00",
+ "source_key": "ip",
+ "source_value": "192.80.6.215",
+ "source_port": "994",
+ "source_asn": "19165",
+ "transport_protocol": "udp"
+}
+```
 
 ## DDoS Reports Fields Harmonization
-
-Field|Format|Defined Values|Level Req.|Example|Field Description|
-|---|---|---|---|---|-----------|
-|source_key|string|"ip"|MUST|"ip"|-|
-|source_value|[ipv4/ipv6]|(dynamic)|MUST|193.136.2.192|Attacker IP|
-|source_port|int|-dynamic|SHOULD|4234|-|
-|destination_key|string|"ip"|SHOULD|"ip"|-|
-|destination_value|[ipv4/ipv6]|(dynamic)|SHOULD|34.34.2.192|Victim IP|
-|destination_port|int|(dynamic)|SHOULD|53|-|
-|transport_protocol|string|["TCP", "UDP", "ICMP"]|MUST|udp|This field is used to give ifnroamtion about the attack for example attack by UDP Flooding...|
-|source_asn|int|(dynamic)|SHOULD|1930|Autonous System Number|
-
-
 
 ### Case: Report an Dos Attack.
 
