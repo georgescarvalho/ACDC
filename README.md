@@ -1,4 +1,4 @@
-<a name="events-classification"></a>
+<a name="sensor-identification"></a>
 # Sensor Identification
 |Category|Sensor|Entity|
 |---|---|---|
@@ -28,7 +28,7 @@
 |spam|AHPS|ATOS|
 |spam| (...) | (...)|
 
-
+<a name="events-classification"></a>
 # Events Classification
 
 |Category|SubCategory|
@@ -55,7 +55,8 @@ stflux|malicious content|
 
 |Field|Format|Defined Values|Level Req.|Example|Field Description|
 |---|---|---|---|---|-----------|
-|sensor|string|["thug", "glastopf", "dionaea", ...]|MUST|"thug"|Sensor Name|
+|sensor|string|[sensor list](#sensor-identification)|MUST|"website"|classification of the event...|
+|subcategory|string|[subcategories list](#events-classific|MUST|"thug"|Sensor Name|
 |category|string|[categories list](#events-classification)|MUST|"website"|classification of the event...|
 |subcategory|string|[subcategories list](#events-classification)|MUST|"malicious content"|subclassification of the event...|
 |description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
