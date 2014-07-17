@@ -109,7 +109,7 @@ Field|Defined Values|Level Req.|
 
 ```
 {
- "sensor": "thug",
+ "sensor": "Black-Holing",
  "category": "ddos",
  "subcategory": "bot",
  "description": "Bot (infected system) connected to C&C server.", 
