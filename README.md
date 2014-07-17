@@ -1,5 +1,6 @@
 <a name="events-classification"></a>
 # Sensor Classification
+
 |Category|Sensor|Entity|
 |---|---|
 |ddos|thug|
@@ -10,7 +11,7 @@
 |website||
 |website||
 |||
-stflux|malicious content|
+|fasstflux|malicious content|
 |||
 |mobile|malware|
 |mobile|malicious content|
