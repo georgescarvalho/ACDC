@@ -63,7 +63,7 @@
 Field|Defined Values|Level Req.|
 |---|---|---|
 |sensor|["thug", "glastopf", "dionaea", ...]|MUST|
-|category|["ddos", "website", "spam", "fastflux", "mobile"][link](http://)|MUST|
+|category|[categories list](#events-classification)|MUST|
 |subcategory|"bot"|MUST|
 |description|"Bot (infected system) connected to C&C server."|MUST|
 |timestamp|(dynamic)|MUST|
