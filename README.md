@@ -137,7 +137,7 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|["thug", "glastopf", "dionaea", ...]|MUST|\<descrever\>|
+|sensor|[sensor list](#sensor-identification)|MUST|\<descrever\>|
 |category|[categories list](#events-classification)|MUST||
 |subcategory|"c&c"|MUST||
 |description|"C&C server found."|MUST||
@@ -154,7 +154,7 @@ Field|Defined Values|Level Req.|Field description|
 
 ```
 {
- "sensor": "thug",
+ "sensor": "DDoS Monitoring Tool",
  "category": "ddos",
  "subcategory": "c&c",
  "description": "C&C server found.", 
@@ -175,29 +175,29 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|
-|---|---|---|
-|sensor|["thug", "glastopf", "dionaea", ...]|MUST|
-|category|"ddos"|MUST|
-|subcategory|"flood"|MUST|
-|timestamp|(dynamic)|MUST|
-|description|"DoS Attack from source to destination."|MUST|
-|source_key|"ip"|MUST|
-|source_value|(dynamic)|MUST|
-|source_port|(dynamic)|MUST|
-|source_asn|(dynamic)|SHOULD|
-|destination_key|"ip"|MUST|
-|destination_value|(dynamic)|MUST|
-|destination_port|(dynamic)|MUST|
-|destination_asn|(dynamic)|MAY|
-|transport_protocol|(dynamic)|MUST|
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|[sensor list](#sensor-identification)|MUST|\<descrever\>|
+|category|"ddos"|MUST||
+|subcategory|"flood"|MUST||
+|timestamp|(dynamic)|MUST||
+|description|"DoS Attack from source to destination."|MUST||
+|source_key|"ip"|MUST||
+|source_value|(dynamic)|MUST||
+|source_port|(dynamic)|MUST||
+|source_asn|(dynamic)|SHOULD||
+|destination_key|"ip"|MUST||
+|destination_value|(dynamic)|MUST||
+|destination_port|(dynamic)|MUST||
+|destination_asn|(dynamic)|MAY||
+|transport_protocol|(dynamic)|MUST||
 
 
 **JSON Example**
 
 ```
 {
- "sensor": "thug",
+ "sensor": "DDoS Monitoring Tool",
  "category": "ddos",
  "subcategory": "flood",
  "timestamp": "2014-07-15T00:16:29+00:00",
@@ -223,26 +223,26 @@ Field|Defined Values|Level Req.|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|
-|---|---|---|
-|sensor|"thug"|MUST|
-|category|"website"|MUST|
-|subcategory|"malicious content"|MUST|
-|timestamp|(dynamic)|MUST|
-|description|"Website found with malicious content."|MUST|
-|source_key|"url"|MUST|
-|source_value|(dynamic)|MUST|
-|source_port|(dynamic)|MAY|
-|source_asn|(dynamic)|SHOULD|
-|protocol|"http"|MAY|
-|transport_protocol|(dynamic)|MAY|
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|"Skanna"|MUST|MUST|\<descrever\>|
+|category|"website"|MUST||
+|subcategory|"malicious content"|MUST||
+|timestamp|(dynamic)|MUST||
+|description|"Website found with malicious content."|MUST||
+|source_key|"url"|MUST||
+|source_value|(dynamic)|MUST||
+|source_port|(dynamic)|MAY||
+|source_asn|(dynamic)|SHOULD||
+|protocol|"http"|MAY||
+|transport_protocol|(dynamic)|MAY||
 
 
 **JSON Example**
 
 ```
 {
- "sensor": "thug",
+ "sensor": "Skanna",
  "category": "website",
  "subcategory": "malicious content",
  "timestamp": "2014-05-29T23:28:09+00:00",
@@ -262,9 +262,9 @@ Field|Defined Values|Level Req.|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|
+Field|Defined Values|Level Req.|Field description|
 |---|---|---|
-|sensor|"thug"|MUST|
+|sensor|"Horga"|MUST|\<descrever\>
 |category|"website"|MUST|
 |subcategory|"malware"|MUST|
 |timestamp|(dynamic)|MUST|
@@ -279,7 +279,7 @@ Field|Defined Values|Level Req.|
 
 ```
 {
- "sensor": "thug",
+ "sensor": "Horga",
  "category": "website",
  "subcategory": "malware",
  "timestamp": "2013-01-30T23:28:09+00:00",
