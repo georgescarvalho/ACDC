@@ -81,8 +81,8 @@ stflux|malicious content|
 |confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|Level of confidence in source **(this value should not exist because CCH is who can decide in the central point)**|
 ```
 
-
-## Bot Detection Reports Fields Harmonization
+# General categories
+### *Bot Detection Reports Fields Harmonization*
 
 **Perspective:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
 
@@ -131,7 +131,7 @@ Field|Defined Values|Level Req.|Field description|
 
 
 
-## C&C Detection Reports Fields Harmonization
+### *C&C Detection Reports Fields Harmonization*
 
 **Perspective:** C&C ip must be inserted in source_value.
 
@@ -169,9 +169,10 @@ Field|Defined Values|Level Req.|Field description|
 }
 ```
 
-## DDoS Reports Fields Harmonization
+# Specific categories for DDOS
+### *DDoS Reports Fields Harmonization*
 
-### Case: Report an Dos Attack.
+#### Case: Report an Dos Attack.
 
 **Perspective:** Source IP of attack must be inserted in source_value and 'destination IP' (victim) must be inserted in 'destination_value'.
 
@@ -216,10 +217,11 @@ Field|Defined Values|Level Req.|Field description|
 }
 ```
 
+# Specific categories for Website
 
-## Website Reports Fields Harmonization
+### *Website Reports Fields Harmonization*
 
-### Case: Report a Malicious Website.
+#### Case: Report a Malicious Website.
 
 **Note:** TBD.
 
