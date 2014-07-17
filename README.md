@@ -135,19 +135,19 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|
-|---|---|---|
-|sensor|["thug", "glastopf", "dionaea", ...]|MUST|
-|category|[categories list](#events-classification)|MUST|
-|subcategory|"c&c"|MUST|
-|description|"C&C server found."|MUST|
-|timestamp|(dynamic)|MUST|
-|source_key|"ip"|MUST|
-|source_value|(dynamic)|MUST|
-|source_port|(dynamic)|MAY|
-|source_asn|(dynamic)|SHOULD|
-|protocol|(dynamic)|SHOULD|
-|transport_protocol|(dynamic)|SHOULD|
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["thug", "glastopf", "dionaea", ...]|MUST|\<descrever\>|
+|category|[categories list](#events-classification)|MUST||
+|subcategory|"c&c"|MUST||
+|description|"C&C server found."|MUST||
+|timestamp|(dynamic)|MUST||
+|source_key|"ip"|MUST||
+|source_value|(dynamic)|MUST||
+|source_port|(dynamic)|MAY||
+|source_asn|(dynamic)|SHOULD||
+|protocol|(dynamic)|SHOULD||
+|transport_protocol|(dynamic)|SHOULD||
 
 
 **JSON Example**
