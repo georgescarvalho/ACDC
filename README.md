@@ -1,6 +1,5 @@
 <a name="events-classification"></a>
-# Sensor Classification
-
+# Sensor Identification
 |Category|Sensor|Entity|
 |---|---|---|
 |ddos|thug||
