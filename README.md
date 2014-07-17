@@ -112,7 +112,7 @@ Field|Defined Values|Level Req.|
 Field|Defined Values|Level Req.|
 |---|---|---|
 |sensor|["thug", "glastopf", "dionaea", ...]|MUST|
-|category|["ddos", "website", "spam", "fastflux", "mobile"][link](http://)|MUST|
+|category|[categories list](#events-classification)|MUST|
 |subcategory|"c&c"|MUST|
 |description|"C&C server found."|MUST|
 |timestamp|(dynamic)|MUST|
@@ -151,7 +151,7 @@ Field|Defined Values|Level Req.|
 
 Field|Defined Values|Level Req.|
 |---|---|---|
-|sensor|"thug"|MUST|
+|sensor|["thug", "glastopf", "dionaea", ...]|MUST|
 |category|"ddos"|MUST|
 |subcategory|"flood"|MUST|
 |timestamp|(dynamic)|MUST|
