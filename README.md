@@ -328,7 +328,8 @@ Field|Defined Values|Level Req.|Field description|
 }
 ```
 =
-#### Case: Report a Fastflux malicious contente.
+### *FastFlux Reports Fields Harmonization*
+#### Case: Report a Fastflux malicious content.
 **Note:** TBD.
 
 **Dataset**
@@ -355,6 +356,42 @@ Field|Defined Values|Level Req.|Field description|
  "timestamp": "2013-01-30T23:28:09+00:00",
  "description": "...................", 
  "source_key": ".........",
+ "source_value": "dGhpcyBpcyB0aGUgYmluYXJ5IHNhbXBsZSBlbmNvZGVk",
+ "sample_hash": "dbd014125a4bad51db85f27279f1040a",
+ "sample_filename": "best-antivirus.exe"
+}
+```
+=
+### *Mobile Reports Fields Harmonization*
+#### Case: Report a Malware binary.
+
+**Note:** TBD.
+
+**Dataset**
+
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|\<descrever\>
+|category|"mobile"|MUST||
+|subcategory|"malware"|MUST||
+|timestamp|(dynamic)|MUST||
+|description|"Mobile found with malware binary."|MUST||
+|source_key|"sample"|MUST||
+|source_value|(dynamic)|MUST||
+|sample_hash|(dynamic)|MUST||
+|sample_filename|(dynamic)|MUST||
+
+
+**JSON Example**
+
+```
+{
+ "sensor": "Conan mobile",
+ "category": "mobile",
+ "subcategory": "malware",
+ "timestamp": "2013-01-30T23:28:09+00:00",
+ "description": "mobile found with malware binary.", 
+ "source_key": "sample",
  "source_value": "dGhpcyBpcyB0aGUgYmluYXJ5IHNhbXBsZSBlbmNvZGVk",
  "sample_hash": "dbd014125a4bad51db85f27279f1040a",
  "sample_filename": "best-antivirus.exe"
