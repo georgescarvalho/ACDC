@@ -446,6 +446,163 @@ Field|Defined Values|Level Req.|Field description|
 ```
 =
 
+#### Case: Report a Event.
+
+**Note:** TBD.
+
+**Dataset**
+
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|MUST|\<descrever\>|
+|category|"mobile"|MUST||
+|subcategory|"event"|MUST||
+|timestamp|(dynamic)|MUST||
+|description|"......."|MUST||
+|source_key|".........."|MUST||
+|source_value|(dynamic)|MUST||
+|source_port|(dynamic)|MAY||
+|source_asn|(dynamic)|SHOULD||
+|protocol|"......."|MAY||
+|transport_protocol|(dynamic)|MAY||
+
+
+**JSON Example**
+
+```
+{
+ "sensor": "Suricata IDS",
+ "category": "mobile",
+ "subcategory": "event",
+ "timestamp": "2014-05-29T23:28:09+00:00",
+ "description": ".......", 
+ "source_key": "...............",
+ "source_value": "...................",
+ "source_port": "443",
+ "source_asn": "8982",
+ "protocol": "..........",
+ "transport_protocol": "........."
+}
+```
+=
+### *SPAM Reports Fields Harmonization*
+#### Case: Report a Malware binary.
+
+**Note:** TBD.
+
+**Dataset**
+
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
+|category|"spam"|MUST||
+|subcategory|"malware"|MUST||
+|timestamp|(dynamic)|MUST||
+|description|"Spam found with malware binary."|MUST||
+|source_key|"sample"|MUST||
+|source_value|(dynamic)|MUST||
+|sample_hash|(dynamic)|MUST||
+|sample_filename|(dynamic)|MUST||
+
+
+**JSON Example**
+
+```
+{
+ "sensor": "Spamtrap",
+ "category": "spam",
+ "subcategory": "malware",
+ "timestamp": "2013-01-30T23:28:09+00:00",
+ "description": "spam found with malware binary.", 
+ "source_key": "sample",
+ "source_value": "dGhpcyBpcyB0aGUgYmluYXJ5IHNhbXBsZSBlbmNvZGVk",
+ "sample_hash": "dbd014125a4bad51db85f27279f1040a",
+ "sample_filename": "best-antivirus.exe"
+}
+```
+
+=
+### Case: Report a Malware content.
+
+**Note:** TBD.
+
+**Dataset**
+
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
+|category|"spam"|MUST||
+|subcategory|"malicious content"|MUST||
+|timestamp|(dynamic)|MUST||
+|description|"Website found with malicious content."|MUST||
+|source_key|"url"|MUST||
+|source_value|(dynamic)|MUST||
+|source_port|(dynamic)|MAY||
+|source_asn|(dynamic)|SHOULD||
+|protocol|"http"|MAY||
+|transport_protocol|(dynamic)|MAY||
+
+
+**JSON Example**
+
+```
+{
+ "sensor": "Spamtrap",
+ "category": "spam",
+ "subcategory": "malicious content",
+ "timestamp": "2014-05-29T23:28:09+00:00",
+ "description": "spam found with malicious content.", 
+ "source_key": "url",
+ "source_value": "https://xasdda.xxxxx.com/pub.php",
+ "source_port": "443",
+ "source_asn": "8982",
+ "protocol": "http",
+ "transport_protocol": "tcp"
+}
+```
+
+=
+### Case: Report a campaign
+**Note:** TBD.
+
+**Dataset**
+
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
+|category|"spam"|MUST||
+|subcategory|"campaign"|MUST||
+|timestamp|(dynamic)|MUST||
+|description|"......."|MUST||
+|source_key|"...."|MUST||
+|source_value|(dynamic)|MUST||
+|source_port|(dynamic)|MAY||
+|source_asn|(dynamic)|SHOULD||
+|protocol|"http"|MAY||
+|transport_protocol|(dynamic)|MAY||
+
+
+**JSON Example**
+
+```
+{
+ "sensor": "Spamtrap",
+ "category": "spam",
+ "subcategory": "campaign",
+ "timestamp": "2014-05-29T23:28:09+00:00",
+ "description": "......", 
+ "source_key": "...",
+ "source_value": "https://xasdda.xxxxx.com/pub.php",
+ "source_port": "443",
+ "source_asn": "8982",
+ "protocol": "http",
+ "transport_protocol": "tcp"
+}
+```
+
+=
+
+
 # Data Semantic Analysis
 
 ### Network Semantics
