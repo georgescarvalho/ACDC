@@ -522,7 +522,7 @@ Field|Defined Values|Level Req.|Field description|
 ```
 
 =
-### Case: Report a Malware content.
+#### Case: Report a Malware content.
 
 **Note:** TBD.
 
@@ -562,7 +562,7 @@ Field|Defined Values|Level Req.|Field description|
 ```
 
 =
-### Case: Report a campaign
+#### Case: Report a campaign
 **Note:** TBD.
 
 **Dataset**
