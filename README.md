@@ -321,13 +321,45 @@ Field|Defined Values|Level Req.|Field description|
  "subcategory": "vulnerable",
  "timestamp": "2013-01-30T23:28:09+00:00",
  "description": "Vulnerable website.", 
- "source_key": "sample",
+ "source_key": "........",
  "source_value": "dGhpcyBpcyB0aGUgYmluYXJ5IHNhbXBsZSBlbmNvZGVk",
  "sample_hash": "dbd014125a4bad51db85f27279f1040a",
  "sample_filename": "best-antivirus.exe"
 }
 ```
+=
+#### Case: Report a Fastflux malicious contente.
+**Note:** TBD.
 
+**Dataset**
+
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Passive dns sensor","DNS Traffic Sensor", "Flux Detect",(...)]|MUST|\<descrever\>
+|category|"fastflux"|MUST||
+|subcategory|"Malicious content"|MUST||
+|timestamp|(dynamic)|MUST||
+|description|"........."|MUST||
+|source_key|"`domain`"|MUST||
+|source_value|(dynamic)|MUST||
+|sample_hash|(dynamic)|MUST||
+|sample_filename|(dynamic)|MUST||
+
+**JSON Example**
+
+```
+{
+ "sensor": "Flux Detect",
+ "category": "fastflux",
+ "subcategory": "Malicious content",
+ "timestamp": "2013-01-30T23:28:09+00:00",
+ "description": "...................", 
+ "source_key": ".........",
+ "source_value": "dGhpcyBpcyB0aGUgYmluYXJ5IHNhbXBsZSBlbmNvZGVk",
+ "sample_hash": "dbd014125a4bad51db85f27279f1040a",
+ "sample_filename": "best-antivirus.exe"
+}
+```
 
 =
 # Data Semantic Analysis
