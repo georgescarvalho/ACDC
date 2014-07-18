@@ -228,7 +228,7 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|MUST|\<descrever\>|
+|sensor|["initiative-S","DNS Traffic Sensor", "Skanna","Honeypot Sensor",(...)]|MUST|MUST|\<descrever\>|
 |category|"website"|MUST||
 |subcategory|"malicious content"|MUST||
 |timestamp|(dynamic)|MUST||
@@ -334,31 +334,38 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
+
+
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|["Passive dns sensor","DNS Traffic Sensor", "Flux Detect",(...)]|MUST|\<descrever\>
+|sensor|["Passive dns sensor","DNS Traffic Sensor", "Flux Detect",(...)]|MUST|MUST|\<descrever\>|
 |category|"fastflux"|MUST||
-|subcategory|"Malicious content"|MUST||
+|subcategory|"malicious content"|MUST||
 |timestamp|(dynamic)|MUST||
-|description|"........."|MUST||
+|description|"............."|MUST||
 |source_key|"`domain`"|MUST||
 |source_value|(dynamic)|MUST||
-|sample_hash|(dynamic)|MUST||
-|sample_filename|(dynamic)|MUST||
+|source_port|(dynamic)|MAY||
+|source_asn|(dynamic)|SHOULD||
+|protocol|"http"|MAY||
+|transport_protocol|(dynamic)|MAY||
+
 
 **JSON Example**
 
 ```
 {
- "sensor": "Flux Detect",
+ "sensor": "Flux Detec",
  "category": "fastflux",
- "subcategory": "Malicious content",
- "timestamp": "2013-01-30T23:28:09+00:00",
- "description": "...................", 
- "source_key": ".........",
- "source_value": "dGhpcyBpcyB0aGUgYmluYXJ5IHNhbXBsZSBlbmNvZGVk",
- "sample_hash": "dbd014125a4bad51db85f27279f1040a",
- "sample_filename": "best-antivirus.exe"
+ "subcategory": "malicious content",
+ "timestamp": "2014-05-29T23:28:09+00:00",
+ "description": "...........", 
+ "source_key": "`domain`",
+ "source_value": "........",
+ "source_port": "443",
+ "source_asn": "8982",
+ "protocol": "http",
+ "transport_protocol": "tcp"
 }
 ```
 =
@@ -399,6 +406,46 @@ Field|Defined Values|Level Req.|Field description|
 ```
 
 =
+#### Case: Report a Malicious Content.
+
+**Note:** TBD.
+
+**Dataset**
+
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|MUST|\<descrever\>|
+|category|"mobile"|MUST||
+|subcategory|"malicious content"|MUST||
+|timestamp|(dynamic)|MUST||
+|description|"Mobile found with malicious content."|MUST||
+|source_key|".........."|MUST||
+|source_value|(dynamic)|MUST||
+|source_port|(dynamic)|MAY||
+|source_asn|(dynamic)|SHOULD||
+|protocol|"......."|MAY||
+|transport_protocol|(dynamic)|MAY||
+
+
+**JSON Example**
+
+```
+{
+ "sensor": "Suricata IDS",
+ "category": "mobile",
+ "subcategory": "malicious content",
+ "timestamp": "2014-05-29T23:28:09+00:00",
+ "description": "Mobile found with malicious content.", 
+ "source_key": "...............",
+ "source_value": "...................",
+ "source_port": "443",
+ "source_asn": "8982",
+ "protocol": "..........",
+ "transport_protocol": "........."
+}
+```
+=
+
 # Data Semantic Analysis
 
 ### Network Semantics
