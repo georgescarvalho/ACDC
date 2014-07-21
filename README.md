@@ -84,7 +84,7 @@ stflux|malicious content|
 # Sensors Harmonization
 
 ### *Minimum Dataset*
-**Perspective:**:
+**Perspective:**
 
 ** Dataset **
 
@@ -94,7 +94,7 @@ Field|Defined Values| Example| Level Req.| Specific description|
 |sensor|[sensor list](#sensor-identification)|"Horga"|MUST|\<descrever\>|
 |category|[categories list](#events-classification)|"website"|MUST||
 |subcategory|"bot"||MUST||
-|description|"Bot (infected system) connected to C&C server."||MUST||
+|description|"Bot (infected system) connected to C&C server."|"Bot"|MUST||
 |timestamp|(dynamic)||MUST||
 |source_key|"ip"|MUST||
 |source_value|(dynamic)||MUST||
