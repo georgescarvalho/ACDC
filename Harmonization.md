@@ -45,8 +45,8 @@ stflux|malicious content|
 |mobile|malware|
 |mobile|malicious content|
 |mobile|SMS Hijack|
-|mobile|MAC Changed|
-|mobile|IMEI Changed|
+|mobile|MAC Changed (TBD)|
+|mobile|IMEI Changed (TBD)|
 |||
 |spam|malware|
 |spam|malicious content|
