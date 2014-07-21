@@ -326,7 +326,7 @@ Field|Defined Values|Example|Level Req.|Field description|
 **Dataset**
 
 Field|Defined Values|Example|Level Req.|Specific description|
-|---|---|---|---|
+|---|---|---|---|---|
 |sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]||MUST|\<descrever\>
 |category|"website"||MUST||
 |subcategory|"vulnerable"||MUST||
