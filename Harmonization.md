@@ -74,7 +74,7 @@ stflux|malicious content|
 |destination_asn|int|(dynamic)|Autonous System Number|
 |transport_protocol|string|["tcp", "udp", "icmp"]|This field is used to give infroamtion about the attack for example attack by UDP...|
 |protocol|string|["dns", "http, "ssh", etc..]|This field is used to give infroamtion about the attack for example attack though SSH|
-|sample_hash|string|["md5", "sha512"]|Hash of the sample|
+|sample_hash|string ("md5", "sha512")|(dynamic)|Hash of the sample|
 |sample_filename|string|string|Filename of the sample|
 
 =
