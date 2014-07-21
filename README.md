@@ -298,7 +298,7 @@ Field|Defined Values|Example|Level Req.|Field description|
 |timestamp|(dynamic)||MUST||
 |description|"Website found with malware binary."||MUST||
 |source_key|"sample"||MUST||
-|source_value|(dynamic)||MUST||
+|source_value|(dynamic)|||MUST||
 |sample_hash|(dynamic)||MUST||
 |sample_filename|(dynamic)||MUST||
 
@@ -368,12 +368,12 @@ Field|Defined Values|Level Req.|Field description|
 |subcategory|"malicious content"|MUST||
 |timestamp|(dynamic)|MUST||
 |description|"............."|MUST||
-|source_key|"`domain`"|MUST||
-|source_value|(dynamic)|MUST||
-|source_port|(dynamic)|MAY||
-|source_asn|(dynamic)|SHOULD||
+|source_key|"domain"||MUST||
+|source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
 |protocol|"http"|MAY||
-|transport_protocol|(dynamic)|MAY||
+|transport_protocol|(dynamic)||MAY||
 
 
 **JSON Example**
@@ -401,17 +401,17 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
-|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|\<descrever\>
-|category|"mobile"|MUST||
-|subcategory|"malware"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"Mobile found with malware binary."|MUST||
-|source_key|"sample"|MUST||
-|source_value|(dynamic)|MUST||
-|sample_hash|(dynamic)|MUST||
-|sample_filename|(dynamic)|MUST||
+Field|Defined Values|Example|Level Req.|Field description|
+|---|---|---|---|---|
+|sensor|["Suricata IDS","Conan mobile",(...)]||MUST|\<descrever\>
+|category|"mobile"||MUST||
+|subcategory|"malware"||MUST||
+|timestamp|(dynamic)||MUST||
+|description|"Mobile found with malware binary."||MUST||
+|source_key|"sample"||MUST||
+|source_value|(dynamic)||MUST||
+|sample_hash|(dynamic)||MUST||
+|sample_filename|(dynamic)||MUST||
 
 
 **JSON Example**
@@ -438,18 +438,18 @@ Field|Defined Values|Level Req.|Field description|
 **Dataset**
 
 Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
-|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|MUST|\<descrever\>|
-|category|"mobile"|MUST||
-|subcategory|"malicious content"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"Mobile found with malicious content."|MUST||
-|source_key|".........."|MUST||
-|source_value|(dynamic)|MUST||
-|source_port|(dynamic)|MAY||
-|source_asn|(dynamic)|SHOULD||
-|protocol|"......."|MAY||
-|transport_protocol|(dynamic)|MAY||
+|---|---|---|---|---|
+|sensor|["Suricata IDS","Conan mobile",(...)]||MUST|MUST|\<descrever\>|
+|category|"mobile"||MUST||
+|subcategory|"malicious content"||MUST||
+|timestamp|(dynamic)||MUST||
+|description|"Mobile found with malicious content."||MUST||
+|source_key|".........."||MUST||
+|source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
+|protocol|"......."||MAY||
+|transport_protocol||(dynamic)|MAY||
 
 
 **JSON Example**
@@ -478,18 +478,18 @@ Field|Defined Values|Level Req.|Field description|
 **Dataset**
 
 Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
-|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|MUST|\<descrever\>|
-|category|"mobile"|MUST||
-|subcategory|"event"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"......."|MUST||
-|source_key|".........."|MUST||
-|source_value|(dynamic)|MUST||
-|source_port|(dynamic)|MAY||
-|source_asn|(dynamic)|SHOULD||
-|protocol|"......."|MAY||
-|transport_protocol|(dynamic)|MAY||
+|---|---|---|---|---|
+|sensor|["Suricata IDS","Conan mobile",(...)]||MUST|\<descrever\>|
+|category|"mobile"||MUST||
+|subcategory|"event"||MUST||
+|timestamp|(dynamic)||MUST||
+|description|"......."||MUST||
+|source_key|".........."||MUST||
+|source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
+|protocol|"......."||MAY||
+|transport_protocol|(dynamic)||MAY||
 
 
 **JSON Example**
@@ -517,17 +517,17 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
-|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
-|category|"spam"|MUST||
-|subcategory|"malware"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"Spam found with malware binary."|MUST||
-|source_key|"sample"|MUST||
-|source_value|(dynamic)|MUST||
-|sample_hash|(dynamic)|MUST||
-|sample_filename|(dynamic)|MUST||
+Field|Defined Values|Example|Level Req.|Field description|
+|---|---|---|---|---|
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]||MUST|\<descrever\>
+|category|"spam"||MUST||
+|subcategory|"malware"||MUST||
+|timestamp|(dynamic)||MUST||
+|description|"Spam found with malware binary."||MUST||
+|source_key|"sample"||MUST||
+|source_value|(dynamic)||MUST||
+|sample_hash|(dynamic)||MUST||
+|sample_filename|(dynamic)||MUST||
 
 
 **JSON Example**
@@ -553,19 +553,19 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
-|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
-|category|"spam"|MUST||
-|subcategory|"malicious content"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"Website found with malicious content."|MUST||
-|source_key|"url"|MUST||
-|source_value|(dynamic)|MUST||
-|source_port|(dynamic)|MAY||
-|source_asn|(dynamic)|SHOULD||
+Field|Defined Values|Example|Level Req.|Field description|
+|---|---|---|---|---|
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]||MUST|\<descrever\>
+|category|"spam"||MUST||
+|subcategory|"malicious content"||MUST||
+|timestamp|(dynamic)||MUST||
+|description|"Website found with malicious content."||MUST||
+|source_key|"url"||MUST||
+|source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
 |protocol|"http"|MAY||
-|transport_protocol|(dynamic)|MAY||
+|transport_protocol|(dynamic)||MAY||
 
 
 **JSON Example**
@@ -592,19 +592,19 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
-|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
-|category|"spam"|MUST||
-|subcategory|"campaign"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"......."|MUST||
-|source_key|"...."|MUST||
-|source_value|(dynamic)|MUST||
-|source_port|(dynamic)|MAY||
-|source_asn|(dynamic)|SHOULD||
-|protocol|"http"|MAY||
-|transport_protocol|(dynamic)|MAY||
+Field|Defined Values|Example|Level Req.|Field description|
+|---|---|---|---|---|
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]||MUST|\<descrever\>
+|category|"spam"||MUST||
+|subcategory|"campaign"||MUST||
+|timestamp|(dynamic)||MUST||
+|description|"......."||MUST||
+|source_key|"...."||MUST||
+|source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
+|protocol|"http"||MAY||
+|transport_protocol|(dynamic)||MAY||
 
 
 **JSON Example**
