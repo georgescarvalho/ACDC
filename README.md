@@ -91,23 +91,23 @@ stflux|malicious content|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Field description|
+Field|Defined Values| Example| Level Req.| Specific description|
 |---|---|---|---|
-|sensor|[sensor list](#sensor-identification)|MUST|\<descrever\>|
-|category|[categories list](#events-classification)|MUST||
-|subcategory|"bot"|MUST||
-|description|"Bot (infected system) connected to C&C server."|MUST||
-|timestamp|(dynamic)|MUST||
+|sensor|[sensor list](#sensor-identification)|"Horga"|MUST|\<descrever\>|
+|category|[categories list](#events-classification)|"website"|MUST||
+|subcategory|"bot"||MUST||
+|description|"Bot (infected system) connected to C&C server."||MUST||
+|timestamp|(dynamic)||MUST||
 |source_key|"ip"|MUST||
-|source_value|(dynamic)|MUST||
-|source_port|(dynamic)|MAY||
-|source_asn|(dynamic)|SHOULD||
-|destination_key|"ip"|MUST||
-|destination_value|(dynamic)|MUST||
-|destination_port|(dynamic)|MAY||
-|destination_asn|(dynamic)|SHOULD||
+|source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
+|destination_key|"ip"||MUST||
+|destination_value|(dynamic)||MUST||
+|destination_port|(dynamic)||MAY||
+|destination_asn|(dynamic)||SHOULD||
 |protocol|(dynamic)|SHOULD||
-|transport_protocol|(dynamic)|SHOULD||
+|transport_protocol|(dynamic)||SHOULD||
 
 
 **JSON Example**
