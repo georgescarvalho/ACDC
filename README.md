@@ -84,7 +84,8 @@ stflux|malicious content|
 # Sensors Harmonization
 
 ### *Minimum Dataset*
-**Perspective:**
+
+**Perspective:** 
 
 ** Dataset **
 
@@ -96,20 +97,15 @@ Field|Defined Values| Example| Level Req.| Specific description|
 |subcategory|"bot"||MUST||
 |description|"Bot (infected system) connected to C&C server."|"Bot"|MUST||
 |timestamp|(dynamic)||MUST||
-|source_key|"ip"|MUST||
+|source_key|"ip"|"ip"|MUST||
 |source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MAY||
-|source_asn|(dynamic)||SHOULD||
-|destination_key|"ip"||MUST||
-|destination_value|(dynamic)||MUST||
-|destination_port|(dynamic)||MAY||
-|destination_asn|(dynamic)||SHOULD||
-|protocol|(dynamic)|SHOULD||
-|transport_protocol|(dynamic)||SHOULD||
+
 
 =
 
-### *Bot Detection Reports Fields Harmonization*
+### *Commun / transversal Dataset*
+
+#### Bot Dataset
 
 **Perspective:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
 
@@ -158,25 +154,25 @@ Field|Defined Values| Example| Level Req.| Specific description|
 
 
 
-### *C&C Detection Reports Fields Harmonization*
+#### *C&C Detection Reports Fields Harmonization*
 
 **Perspective:** C&C ip must be inserted in source_value.
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
-|sensor|[sensor list](#sensor-identification)|MUST|\<descrever\>|
-|category|[categories list](#events-classification)|MUST||
-|subcategory|"c&c"|MUST||
-|description|"C&C server found."|MUST||
-|timestamp|(dynamic)|MUST||
-|source_key|"ip"|MUST||
-|source_value|(dynamic)|MUST||
-|source_port|(dynamic)|MAY||
-|source_asn|(dynamic)|SHOULD||
-|protocol|(dynamic)|SHOULD||
-|transport_protocol|(dynamic)|SHOULD||
+Field|Defined Values|Example|Level Req.|Specific description|
+|---|---|---|---|---|
+|sensor|[sensor list](#sensor-identification)||MUST|\<descrever\>|
+|category|[categories list](#events-classification)||MUST||
+|subcategory|"c&c"||MUST||
+|description|"C&C server found."||MUST||
+|timestamp|(dynamic)||MUST||
+|source_key|"ip"||MUST||
+|source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
+|protocol|(dynamic)||SHOULD||
+|transport_protocol|(dynamic)||SHOULD||
 
 
 **JSON Example**
@@ -205,22 +201,22 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
+Field|Defined Values|Example|Level Req.|Specific description|
+|---|---|---|---|---|
 |sensor|["DDoS Monitoring Tool","Black-Holing", (...)] |MUST|\<descrever\>|
-|category|"ddos"|MUST||
-|subcategory|"flood"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"DoS Attack from source to destination."|MUST||
-|source_key|"ip"|MUST||
-|source_value|(dynamic)|MUST||
-|source_port|(dynamic)|MUST||
-|source_asn|(dynamic)|SHOULD||
-|destination_key|"ip"|MUST||
-|destination_value|(dynamic)|MUST||
-|destination_port|(dynamic)|MUST||
-|destination_asn|(dynamic)|MAY||
-|transport_protocol|(dynamic)|MUST||
+|category|"ddos"||MUST||
+|subcategory|"flood"||MUST||
+|timestamp|(dynamic)||MUST||
+|description|"DoS Attack from source to destination."||MUST||
+|source_key|"ip"||MUST||
+|source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MUST||
+|source_asn|(dynamic)||SHOULD||
+|destination_key|"ip"||MUST||
+|destination_value|(dynamic)||MUST||
+|destination_port|(dynamic)||MUST||
+|destination_asn|(dynamic)||MAY||
+|transport_protocol|(dynamic)||MUST||
 
 
 **JSON Example**
@@ -253,19 +249,19 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
-|sensor|["initiative-S","DNS Traffic Sensor", "Skanna","Honeypot Sensor",(...)]|MUST|MUST|\<descrever\>|
-|category|"website"|MUST||
-|subcategory|"malicious content"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"Website found with malicious content."|MUST||
-|source_key|"url"|MUST||
-|source_value|(dynamic)|MUST||
-|source_port|(dynamic)|MAY||
-|source_asn|(dynamic)|SHOULD||
-|protocol|"http"|MAY||
-|transport_protocol|(dynamic)|MAY||
+Field|Defined Values|Example|Level Req.|Field description|
+|---|---|---|---|---|
+|sensor|["initiative-S","DNS Traffic Sensor", "Skanna","Honeypot Sensor",(...)]||MUST|MUST|\<descrever\>|
+|category|"website"||MUST||
+|subcategory|"malicious content"||MUST||
+|timestamp|(dynamic)||MUST||
+|description|"Website found with malicious content."||MUST||
+|source_key|"url"||MUST||
+|source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
+|protocol|"http"||MAY||
+|transport_protocol|(dynamic)||MAY||
 
 
 **JSON Example**
@@ -292,17 +288,17 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
-|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|\<descrever\>
-|category|"website"|MUST||
-|subcategory|"malware"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"Website found with malware binary."|MUST||
-|source_key|"sample"|MUST||
-|source_value|(dynamic)|MUST||
-|sample_hash|(dynamic)|MUST||
-|sample_filename|(dynamic)|MUST||
+Field|Defined Values|Example|Level Req.|Field description|
+|---|---|---|---|---|
+|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]||MUST|\<descrever\>
+|category|"website"||MUST||
+|subcategory|"malware"||MUST||
+|timestamp|(dynamic)||MUST||
+|description|"Website found with malware binary."||MUST||
+|source_key|"sample"||MUST||
+|source_value|(dynamic)||MUST||
+|sample_hash|(dynamic)||MUST||
+|sample_filename|(dynamic)||MUST||
 
 
 **JSON Example**
@@ -327,17 +323,17 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Level Req.|Field description|
+Field|Defined Values|Example|Level Req.|Specific description|
 |---|---|---|---|
-|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|\<descrever\>
-|category|"website"|MUST||
-|subcategory|"vulnerable"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"Vulnerable website."|MUST||
-|source_key|"url"|MUST||
-|source_value|(dynamic)|MUST||
-|sample_hash|(dynamic)|MUST||
-|sample_filename|(dynamic)|MUST||
+|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]||MUST|\<descrever\>
+|category|"website"||MUST||
+|subcategory|"vulnerable"||MUST||
+|timestamp|(dynamic)||MUST||
+|description|"Vulnerable website."||MUST||
+|source_key|"url"||MUST||
+|source_value|(dynamic)||MUST||
+|sample_hash|(dynamic)||MUST||
+|sample_filename|(dynamic)||MUST||
 
 **JSON Example**
 
