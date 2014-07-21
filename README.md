@@ -52,28 +52,28 @@ stflux|malicious content|
 
 
 
-### *Global Fields Harmonization*
+### *Field list*
 **Description:**(tentar descrever a tabela)
 
-|Field|Format|Defined Values|Level Req.|Example|Field Description|
-|---|---|---|---|---|-----------|
-|sensor|string|[sensor list](#sensor-identification)|MUST|"DDoS Monitoring Tool"|sensor name...|
-|category|string|[categories list](#events-classification)|MUST|"website"|classification of the event...|
-|subcategory|string|[subcategories list](#events-classification)|MUST|"malicious content"|subclassification of the event...|
-|description|string|(dynamic)|MUST|(dynamic)|Free text characterising the report and should be used for human readable|
-|timestamp|datetime(ISO8601)|(dynamic)|MUST|2014-07-15T00:16:29+00:00|Event timestamp|
-|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", `"MAC"`]|MUST|domain|....|
-|source_value|string|(dynamic)|MUST|(dynamic)|...|
-|source_port|int|(dynamic)|MAY|246|-|
-|source_asn|int|(dynamic)|MAY|1930|Autonous System Number|
-|destination_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|MAY|domain|....|
-|destination_value|string|(dynamic)|MAY|(dynamic)|...|
-|destination_port|int|(dynamic)|MAY|53|-|
-|destination_asn|int|(dynamic)|MAY|1232|Autonous System Number|
-|transport_protocol|string|["tcp", "udp", "icmp"]|SHOULD|"udp"|This field is used to give infroamtion about the attack for example attack by UDP...|
-|protocol|string|["dns", "http, "ssh", etc..]|SHOULD|"http"|This field is used to give infroamtion about the attack for example attack though SSH|
-|sample_hash|string|["md5", "sha512"]|MAY|(dynamic)|Hash of the sample|
-|sample_filename|string|string|MAY|(dynamic)|Filename of the sample|
+|Field|Format|Defined Values|Field Description|
+|---|---|---|-----------|
+|sensor|string|[sensor list](#sensor-identification)|sensor name...|
+|category|string|[categories list](#events-classification)|classification of the event...|
+|subcategory|string|[subcategories list](#events-classification)|subclassification of the event...|
+|description|string|(dynamic)|Free text characterising the report and should be used for human readable|
+|timestamp|datetime(ISO8601)|(dynamic)|Event timestamp|
+|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", "MAC"]|....|
+|source_value|string|(dynamic)|...|
+|source_port|int|(dynamic)|-|
+|source_asn|int|(dynamic)|Autonous System Number|
+|destination_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|....|
+|destination_value|string|(dynamic)|...|
+|destination_port|int|(dynamic)|-|
+|destination_asn|int|(dynamic)|Autonous System Number|
+|transport_protocol|string|["tcp", "udp", "icmp"]|This field is used to give infroamtion about the attack for example attack by UDP...|
+|protocol|string|["dns", "http, "ssh", etc..]|This field is used to give infroamtion about the attack for example attack though SSH|
+|sample_hash|string|["md5", "sha512"]|Hash of the sample|
+|sample_filename|string|string|Filename of the sample|
 
 =
 **To Remove:**
@@ -81,7 +81,10 @@ stflux|malicious content|
 |confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|Level of confidence in source **(this value should not exist because CCH is who can decide in the central point)**|
 ```
 
-# General categories
+# Sensors Harmonization
+
+### *Minimum Dataset*
+
 ### *Bot Detection Reports Fields Harmonization*
 
 **Perspective:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
