@@ -56,7 +56,7 @@ stflux|malicious content|
 **Description:**(tentar descrever a tabela)
 
 |Field|Format|Defined Values|Field Description|
-|---|---|---|---|-----------|
+|---|---|---|-----------|
 |sensor|string|[sensor list](#sensor-identification)|sensor name...|
 |category|string|[categories list](#events-classification)|classification of the event...|
 |subcategory|string|[subcategories list](#events-classification)|subclassification of the event...|
@@ -92,7 +92,7 @@ stflux|malicious content|
 **Dataset**
 
 Field|Defined Values| Example| Level Req.| Specific description|
-|---|---|---|---|
+|---|---|---|---|------|
 |sensor|[sensor list](#sensor-identification)|"Horga"|MUST|\<descrever\>|
 |category|[categories list](#events-classification)|"website"|MUST||
 |subcategory|"bot"||MUST||
