@@ -62,7 +62,7 @@ stflux|malicious content|
 |subcategory|string|[subcategories list](#events-classification)|subclassification of the event...|
 |description|string|(dynamic)|Free text characterising the report and should be used for human readable|
 |timestamp|datetime(ISO8601)|(dynamic)|Event timestamp|
-|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", "MAC"]|....|
+|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", "MAC", "phone number"]|....|
 |source_value|string|(dynamic)|...|
 |source_port|int|(dynamic)|-|
 |source_asn|int|(dynamic)|Autonous System Number|
@@ -84,6 +84,30 @@ stflux|malicious content|
 # Sensors Harmonization
 
 ### *Minimum Dataset*
+**Perspective:**:
+
+** Dataset **
+
+
+Field|Defined Values| Example| Level Req.| Specific description|
+|---|---|---|---|------|
+|sensor|[sensor list](#sensor-identification)|"Horga"|MUST|\<descrever\>|
+|category|[categories list](#events-classification)|"website"|MUST||
+|subcategory|"bot"||MUST||
+|description|"Bot (infected system) connected to C&C server."||MUST||
+|timestamp|(dynamic)||MUST||
+|source_key|"ip"|MUST||
+|source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
+|destination_key|"ip"||MUST||
+|destination_value|(dynamic)||MUST||
+|destination_port|(dynamic)||MAY||
+|destination_asn|(dynamic)||SHOULD||
+|protocol|(dynamic)|SHOULD||
+|transport_protocol|(dynamic)||SHOULD||
+
+=
 
 ### *Bot Detection Reports Fields Harmonization*
 
