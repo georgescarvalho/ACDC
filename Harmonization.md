@@ -60,6 +60,8 @@
 ### *Fields list*
 **Description:** this table present all fields used by all sensors to define events.
 
+**WARNING**: aqui é que deve ter exemplos para as pessoas perceberem o formato.
+
 |Field|Format|Defined Values|Field Description|
 |---|---|---|-----------|
 |sensor|string|[sensor list](#sensor-identification)|sensor name...|
@@ -114,25 +116,23 @@
 
 **Perspective:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
 
-**Dataset**
+**Dataset:**
 
-Field|Defined Values| Example| Level Req.| Specific description|
+Field|Defined Values| Level Req.| Specific description|
 |---|---|---|---|------|
-|sensor|[sensor list](#sensor-identification)|"Horga"|MUST|\<descrever\>|
-|category|[categories list](#events-classification)|"website"|MUST||
-|subcategory|"bot"||MUST||
-|description|"Bot (infected system) connected to C&C server."||MUST||
-|timestamp|(dynamic)||MUST||
-|source_key|"ip"|MUST||
-|source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MAY||
-|source_asn|(dynamic)||SHOULD||
-|destination_key|"ip"||MUST||
-|destination_value|(dynamic)||MUST||
-|destination_port|(dynamic)||MAY||
-|destination_asn|(dynamic)||SHOULD||
-|protocol|(dynamic)|SHOULD||
-|transport_protocol|(dynamic)||SHOULD||
+|sensor|[sensor list](#sensor-identification)|MUST|\<descrever\>|
+|category|[categories list](#events-classification)|MUST|\<descrever\>|
+|subcategory|"bot"|MUST|\<descrever\>|
+|description|"Bot (infected system) connected to C&C server."|MUST|\<descrever\>|
+|timestamp|(dynamic)|MUST|\<descrever\>|
+|source_key|"ip"|MUST|\<descrever\>|
+|source_value|(dynamic)|MUST|\<descrever\>|
+|destination_key|"ip"|MUST|\<descrever\>|
+|destination_value|(dynamic)|MUST|\<descrever\>|
+|protocol|(dynamic)|SHOULD|\<descrever\>|
+|transport_protocol|(dynamic)|SHOULD|\<descrever\>|
+|source_asn|(dynamic)|SHOULD|\<descrever\>|
+|destination_asn|(dynamic)|SHOULD|\<descrever\>|
 
 
 **JSON Example**
@@ -146,38 +146,34 @@ Field|Defined Values| Example| Level Req.| Specific description|
  "timestamp": "2014-07-15T00:16:29+00:00",
  "source_key": "ip",
  "source_value": "192.135.6.215",
- "source_port": "53653",
  "source_asn": "1930",
  "destination_key": "ip",
  "destination_value": "192.80.6.215", 
- "destination_port": "994",
  "destination_asn": "19165",
+ "protocol": "dns",
  "transport_protocol": "udp"
 }
 ```
 
 
-
-
-#### *C&C Detection Reports Fields Harmonization*
+### *C&C Detection Reports Fields Harmonization*
 
 **Perspective:** C&C ip must be inserted in source_value.
 
-**Dataset**
+**Dataset:**
 
-Field|Defined Values|Example|Level Req.|Specific description|
+Field|Defined Values|Level Req.|Specific description|
 |---|---|---|---|---|
-|sensor|[sensor list](#sensor-identification)||MUST|\<descrever\>|
-|category|[categories list](#events-classification)||MUST||
-|subcategory|"c&c"||MUST||
-|description|"C&C server found."||MUST||
-|timestamp|(dynamic)||MUST||
-|source_key|"ip"||MUST||
-|source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MAY||
-|source_asn|(dynamic)||SHOULD||
-|protocol|(dynamic)||SHOULD||
-|transport_protocol|(dynamic)||SHOULD||
+|sensor|[sensor list](#sensor-identification)|MUST|\<descrever\>|
+|category|[categories list](#events-classification)|MUST|\<descrever\>|
+|subcategory|"c&c"|MUST|\<descrever\>|
+|description|"C&C server found."|MUST|\<descrever\>|
+|timestamp|(dynamic)|MUST|\<descrever\>|
+|source_key|"ip"|MUST|\<descrever\>|
+|source_value|(dynamic)|MUST|\<descrever\>|
+|source_asn|(dynamic)|SHOULD|\<descrever\>|
+|protocol|(dynamic)|SHOULD|\<descrever\>|
+|transport_protocol|(dynamic)|SHOULD|\<descrever\>|
 
 
 **JSON Example**
@@ -191,9 +187,9 @@ Field|Defined Values|Example|Level Req.|Specific description|
  "timestamp": "2014-07-15T00:16:29+00:00",
  "source_key": "ip",
  "source_value": "192.80.6.215",
- "source_port": "994",
  "source_asn": "19165",
- "transport_protocol": "udp"
+ "protocol": "http",
+ "transport_protocol": "tcp"
 }
 ```
 
