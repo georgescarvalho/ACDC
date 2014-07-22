@@ -92,12 +92,12 @@
 |sample_filename|string|string|Filename of the sample|"antivirus.exe"|
 |Campaign|"string"|(dynamic)|FIXME|"Energy Safe Products"|
 |Log|base64|(dynamic)|FIXME|"dGhpcyBpcyBhIGxvZyBsaW5lCg=="|
-|CWE|"string"|(dynamic)|FIXME|
-|CVE|"string"|(dynamic)|............|
-|Email_subject|"string"|(dynamic)|............|
-|Email_body|"string"|(dynamic)|............|
-|Email_header|"string"|(dynamic)|............|
-|Version|int|(dynamic)|...............|
+|CWE|"string"|(dynamic)|FIXME|"CWE-89"|
+|CVE|"string"|(dynamic)|FIXME|"CVE-2014-1849"|
+|Email_subject|"string"|(dynamic)|FIXME|"Buy new security products"|
+|Email_body|"string"|(dynamic)|FIXME|"Content-Type: text/html; charset=UTF-8 Content-Transfer-Encoding: 7bit <p>It is not supposed to..."|
+|Email_header|"string"|(dynamic)|FIXME|"Return-Path: zzzzz@gmail.com X-Original-To: ..."|
+|Version|int|(dynamic)|FIXME|"acdc-sensors-1.0"|
 
 
 # Sensors Harmonization
