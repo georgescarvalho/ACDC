@@ -40,7 +40,7 @@
 |website|malicious content|
 |website|vulnerable|
 |||
-stflux|malicious content|
+fastflux|malicious content|
 |||
 |mobile|malware|
 |mobile|malicious content|
