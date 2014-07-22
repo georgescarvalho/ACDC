@@ -79,33 +79,28 @@ stflux|malicious content|
 |sample_hash|string ("md5", "sha512")|(dynamic)|Hash of the sample|
 |sample_filename|string|string|Filename of the sample|
 
-=
-**To Remove:**
-```
-|confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|Level of confidence in source **(this value should not exist because CCH is who can decide in the central point)**|
-```
+
 
 # Sensors Harmonization
 
-### *Minimum Dataset*
+**Considerations:** all harmonization for all sensores must follow this document. In the next sections is present the minimum requirements for each case/scenario but if a sensor can fill more fields from harmonization, its possible to add that too but the fiels will still be optionals (SHOULD/MAY).
 
-**Perspective:** 
+## *Minimum Dataset*
+
+**Considerations:** this minimum dataset MUST be used for all events.
 
 ** Dataset **
 
+Field| Level Req.|
+|---|------|
+|sensor|MUST|
+|category|MUST|
+|subcategory|MUST|
+|description|MUST|
+|timestamp|MUST|
+|source_key|MUST|
+|source_value|MUST|
 
-Field|Defined Values| Example| Level Req.| Specific description|
-|---|---|---|---|------|
-|sensor|[sensor list](#sensor-identification)|"Horga"|MUST|\<descrever\>|
-|category|[categories list](#events-classification)|"website"|MUST||
-|subcategory|"bot"||MUST||
-|description|"Bot (infected system) connected to C&C server."|"Bot"|MUST||
-|timestamp|(dynamic)||MUST||
-|source_key|"ip"|"ip"|MUST||
-|source_value|(dynamic)||MUST||
-
-
-=
 
 ### *Commun / transversal Dataset*
 
@@ -117,18 +112,16 @@ Field|Defined Values| Example| Level Req.| Specific description|
 
 Field|Defined Values| Example| Level Req.| Specific description|
 |---|---|---|---|------|
-|sensor|[sensor list](#sensor-identification)|"Horga"|MUST|\<descrever\>|
+|sensor|[sensor list](#sensor-identification)|"Horga"|MUST|..descrever..|
 |category|[categories list](#events-classification)|"website"|MUST||
 |subcategory|"bot"||MUST||
 |description|"Bot (infected system) connected to C&C server."||MUST||
 |timestamp|(dynamic)||MUST||
 |source_key|"ip"|MUST||
 |source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MAY||
-|source_asn|(dynamic)||SHOULD||
 |destination_key|"ip"||MUST||
 |destination_value|(dynamic)||MUST||
-|destination_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
 |destination_asn|(dynamic)||SHOULD||
 |protocol|(dynamic)|SHOULD||
 |transport_protocol|(dynamic)||SHOULD||
@@ -145,7 +138,6 @@ Field|Defined Values| Example| Level Req.| Specific description|
  "timestamp": "2014-07-15T00:16:29+00:00",
  "source_key": "ip",
  "source_value": "192.135.6.215",
- "source_port": "53653",
  "source_asn": "1930",
  "destination_key": "ip",
  "destination_value": "192.80.6.215", 
