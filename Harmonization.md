@@ -588,8 +588,8 @@ Field|Defined Values|Level Req.|Field description|
 |timestamp|(dynamic)|MUST|...|
 |description|"......."|MUST|...|
 |source_key|"...."|MUST|...|
-|source_value|(dynamic)||MUST|...|
-|source_asn|(dynamic)||SHOULD|...|
+|source_value|(dynamic)|MUST|...|
+|source_asn|(dynamic)|SHOULD|...|
 
 
 **JSON Example**
