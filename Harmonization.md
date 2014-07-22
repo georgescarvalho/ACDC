@@ -51,6 +51,8 @@ stflux|malicious content|
 |spam|malware|
 |spam|malicious content|
 |spam|campaign|
+|||
+|xxxx|Bot e C&C|
 
 
 
