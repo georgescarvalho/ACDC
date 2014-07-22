@@ -79,8 +79,8 @@
 |description|string|(dynamic)|Free text characterising the report and should be used for human readable|"Bot (infected system) connected to C&C server."|
 |timestamp|datetime(ISO8601)|(dynamic)|Event timestamp|"2014-07-15T00:16:29+00:00"|
 |confidence_level|"string"|(dynamic)|FIXME|FIXME|
-|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", "MAC", "phone number"]|FIXME|"ip"|
-|source_value|string|(dynamic)|The identifier of the reported object|"8.8.8.8"|
+|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", "MAC", "phone number"]|Type of the reported object|"ip"|
+|source_value|string|(dynamic)|The identifier (value) of the reported object|"8.8.8.8"|
 |source_port|int|(dynamic)|FIXME|6375|
 |source_asn|int|(dynamic)|Autonous System Number|5454|
 |destination_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|FIXME|"ip"|
