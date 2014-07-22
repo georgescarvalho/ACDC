@@ -66,9 +66,9 @@
 
 <a name="fields-list"></a>
 ### *Fields list*
+
 **Description:** this table present all fields used by all sensors to define events.
 
-**WARNING**: aqui é que deve ter exemplos para as pessoas perceberem o formato.
 
 |Field|Format|Defined Values|Field Description|Example|
 |---|---|---|-----------|-----------|
