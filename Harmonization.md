@@ -51,8 +51,8 @@
 |mobile|malware|
 |mobile|malicious content|
 |mobile|SMS Hijack|
-|mobile|MAC Changed (TBD)|
-|mobile|IMEI Changed (TBD)|
+|mobile|MAC Changed (FIXME)|
+|mobile|IMEI Changed (FIXME)|
 |mobile|bot|
 |mobile|c&c|
 |||
@@ -254,7 +254,7 @@ Field|Defined Values|Example|Level Req.|Specific description|
 
 #### Case: Report a Malicious Website.
 
-**Note:** TBD.
+**Note:** FIXME.
 
 **Dataset**
 
@@ -293,7 +293,7 @@ Field|Defined Values|Example|Level Req.|Field description|
 =
 #### Case: Report a Malware binary.
 
-**Note:** TBD.
+**Note:** FIXME.
 
 **Dataset**
 
@@ -328,7 +328,7 @@ Field|Defined Values|Example|Level Req.|Field description|
 =
 # Validar a partir daqui. Apenas estão as estruturas.
 #### Case: Report a Vulnerable Website.
-**Note:** TBD.
+**Note:** FIXME.
 
 **Dataset**
 
@@ -362,7 +362,7 @@ Field|Defined Values|Example|Level Req.|Specific description|
 =
 ### *FastFlux Reports Fields Harmonization*
 #### Case: Report a Fastflux malicious content.
-**Note:** TBD.
+**Note:** FIXME.
 
 **Dataset**
 
@@ -404,7 +404,7 @@ Field|Defined Values|Level Req.|Field description|
 ### *Mobile Reports Fields Harmonization*
 #### Case: Report a Malware binary.
 
-**Note:** TBD.
+**Note:** FIXME.
 
 **Dataset**
 
@@ -440,7 +440,7 @@ Field|Defined Values|Example|Level Req.|Field description|
 =
 #### Case: Report a Malicious Content.
 
-**Note:** TBD.
+**Note:** FIXME.
 
 **Dataset**
 
@@ -480,7 +480,7 @@ Field|Defined Values|Level Req.|Field description|
 
 #### Case: Report a Event.
 
-**Note:** TBD.
+**Note:** FIXME.
 
 **Dataset**
 
@@ -520,7 +520,7 @@ Field|Defined Values|Level Req.|Field description|
 ### *SPAM Reports Fields Harmonization*
 #### Case: Report a Malware binary.
 
-**Note:** TBD.
+**Note:** FIXME.
 
 **Dataset**
 
@@ -556,7 +556,7 @@ Field|Defined Values|Example|Level Req.|Field description|
 =
 #### Case: Report a Malware content.
 
-**Note:** TBD.
+**Note:** FIXME.
 
 **Dataset**
 
@@ -595,7 +595,7 @@ Field|Defined Values|Example|Level Req.|Field description|
 
 =
 #### Case: Report a campaign
-**Note:** TBD.
+**Note:** FIXME.
 
 **Dataset**
 
