@@ -102,9 +102,9 @@ stflux|malicious content|
 |[source_value](#fields-list)|
 
 
-### *Commun / transversal Dataset*
+## *Commun / transversal Dataset*
 
-#### Bot Dataset
+### Bot Dataset
 
 **Perspective:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
 
@@ -150,7 +150,7 @@ Field|Defined Values| Example| Level Req.| Specific description|
 
 
 
-#### *C&C Detection Reports Fields Harmonization*
+### *C&C Detection Reports Fields Harmonization*
 
 **Perspective:** C&C ip must be inserted in source_value.
 
