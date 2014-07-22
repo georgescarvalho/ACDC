@@ -72,7 +72,7 @@
 
 |Field|Format|Defined Values|Field Description|Example|
 |---|---|---|-----------|-----------|
-|version|int|(dynamic)|FIXME|"acdc-sensors-1.0"|
+|version|string|(dynamic)|FIXME|"acdc-sensors-1.0"|
 |sensor|string|[sensor list](#sensor-identification)|sensor name...|"Spambot Detector"|
 |category|string|[categories list](#events-classification)|classification of the event...|"spam"|
 |subcategory|string|[subcategories list](#events-classification)|subclassification of the event...|"bot"|
