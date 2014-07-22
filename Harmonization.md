@@ -96,7 +96,7 @@
 |cwe|"string"|(dynamic)|FIXME|"CWE-89"|
 |cve|"string"|(dynamic)|FIXME|"CVE-2014-1849"|
 |email_subject|"string"|(dynamic)|FIXME|"Buy new security products"|
-|email_body|"string"|(dynamic)|FIXME|"Content-Type: text/html; charset=UTF-8 Content-Transfer-Encoding: 7bit <p>It is not supposed to..."|
+|email_body|"string"|(dynamic)|FIXME|"Content-Type: text/html; charset=UTF-8 Content-Transfer-Encoding: 7bit ..."|
 |email_header|"string"|(dynamic)|FIXME|"Return-Path: zzzzz@gmail.com X-Original-To: ..."|
 
 
