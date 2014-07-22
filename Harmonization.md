@@ -133,11 +133,11 @@
 
 Field|Defined Values| Level Req.| Specific description|
 |---|---|---|---|------|
-|sensor|[sensor list](#sensor-identification)|MUST|\<descrever\>|
-|category|[categories list](#events-classification)|MUST|\<descrever\>|
-|subcategory|"bot"|MUST|\<descrever\>|
-|description|"Bot (infected system) connected to C&C server."|MUST|\<descrever\>|
-|timestamp|(dynamic)|MUST|\<descrever\>|
+|sensor|[sensor list](#sensor-identification)|MUST|The sensor used to send bot data. Must be selected from "Sensor Identification" list|
+|category|[categories list](#events-classification)|MUST|The category of sensor. Must be selected from "Events Classification" list|
+|subcategory|"bot"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
+|description|"Bot (infected system) connected to C&C server."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processin|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |source_key|"ip"|MUST|\<descrever\>|
 |source_value|(dynamic)|MUST|\<descrever\>|
 |destination_key|"ip"|MUST|\<descrever\>|
@@ -177,11 +177,11 @@ Field|Defined Values| Level Req.| Specific description|
 
 Field|Defined Values|Level Req.|Specific description|
 |---|---|---|---|---|
-|sensor|[sensor list](#sensor-identification)|MUST|\<descrever\>|
+|sensor|[sensor list](#sensor-identification)|MUST|The sensor used to send C&C data. Must be selected from "Sensor Identification" list|
 |category|[categories list](#events-classification)|MUST|\<descrever\>|
 |subcategory|"c&c"|MUST|\<descrever\>|
 |description|"C&C server found."|MUST|\<descrever\>|
-|timestamp|(dynamic)|MUST|\<descrever\>|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |source_key|"ip"|MUST|\<descrever\>|
 |source_value|(dynamic)|MUST|\<descrever\>|
 |source_asn|(dynamic)|SHOULD|\<descrever\>|
@@ -217,10 +217,10 @@ Field|Defined Values|Level Req.|Specific description|
 
 Field|Defined Values|Level Req.|Specific description|
 |---|---|---|---|
-|sensor|["DDoS Monitoring Tool","Black-Holing", (...)]|MUST|\<descrever\>|
+|sensor|["DDoS Monitoring Tool","Black-Holing", (...)]|MUST|The sensor used to send DDOS data. Must be selected from "Sensor Identification" list|
 |category|"ddos"|MUST|\<descrever\>|
 |subcategory|"flood"|MUST|\<descrever\>|
-|timestamp|(dynamic)|MUST|\<descrever\>|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"DoS Attack from source to destination."|MUST|\<descrever\>|
 |source_key|"ip"|MUST|\<descrever\>|
 |source_value|(dynamic)|MUST|\<descrever\>|
@@ -263,10 +263,10 @@ Field|Defined Values|Level Req.|Specific description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|["initiative-S","DNS Traffic Sensor", "Skanna","Honeypot Sensor",(...)]|MUST|\<descrever\>|
+|sensor|["initiative-S","DNS Traffic Sensor", "Skanna","Honeypot Sensor",(...)]|MUST|The sensor used to send malicious website data. Must be selected from "Sensor Identification" list|
 |category|"website"|MUST|.......|
 |subcategory|"malicious content"|MUST|......|
-|timestamp|(dynamic)|MUST|....|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Website found with malicious content."|MUST|....|
 |source_key|"url"|MUST|......|
 |source_value|(dynamic)|MUST|.....|
@@ -299,10 +299,10 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|\<descrever\>
+|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|The sensor used to send malware binary data. Must be selected from "Sensor Identification" list|
 |category|"website"|MUST|...|
 |subcategory|"malware"|MUST|...|
-|timestamp|(dynamic)|MUST|...|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Website found with malware binary."|MUST|...|
 |source_key|"sample"|MUST|...|
 |source_value|(dynamic)|MUST|...|
@@ -334,10 +334,10 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Specific description|
 |---|---|---|---|
-|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|\<descrever\>
+|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|The sensor used to send vulnerable website data. Must be selected from "Sensor Identification" list|
 |category|"website"|MUST|...|
 |subcategory|"vulnerable"|MUST|...|
-|timestamp|(dynamic)|MUST|...|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Vulnerable website."|MUST|...|
 |source_key|"url"|MUST|...|
 |source_value|(dynamic)|MUST|...|
@@ -370,10 +370,10 @@ Field|Defined Values|Level Req.|Specific description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|["Passive dns sensor","DNS Traffic Sensor", "Flux Detect",(...)]|MUST|MUST|\<descrever\>|
+|sensor|["Passive dns sensor","DNS Traffic Sensor", "Flux Detect",(...)]|MUST|MUST|The sensor used to send fastflux malicious content data. Must be selected from "Sensor Identification" list|
 |category|"fastflux"|MUST|...|
 |subcategory|"malicious content"|MUST|...|
-|timestamp|(dynamic)|MUST|...|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"............."|MUST|...|
 |source_key|"domain"|MUST|...|
 |source_value|(dynamic)|MUST|...|
@@ -406,10 +406,10 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|\<descrever\>
+|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|The sensor used to send mobile malware binary data. Must be selected from "Sensor Identification" list|
 |category|"mobile"|MUST|...|
 |subcategory|"malware"|MUST|...|
-|timestamp|(dynamic)|MUST|...|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Mobile found with malware binary."|MUST|...|
 |source_key|"sample"|MUST|...|
 |source_value|(dynamic)|MUST|...|
@@ -442,10 +442,10 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|MUST|\<descrever\>|
+|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|MUST|The sensor used to send mobile malicious content data. Must be selected from "Sensor Identification" list|
 |category|"mobile"|MUST|...|
 |subcategory|"malicious content"|MUST|...|
-|timestamp|(dynamic)|MUST|...|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Mobile found with malicious content."|MUST|...|
 |source_key|".........."|MUST|...|
 |source_value|(dynamic)|MUST|...|
@@ -481,7 +481,7 @@ Field|Defined Values|Level Req.|Field description|
 |sensor|["Suricata IDS","Conan mobile",(...)]|MUST|\<descrever\>|
 |category|"mobile"|MUST|...|
 |subcategory|"event"|MUST|...|
-|timestamp|(dynamic)|MUST|...|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"......."|MUST|...|
 |source_key|".........."|MUST|...|
 |source_value|(dynamic)|MUST|...|
@@ -515,7 +515,7 @@ Field|Defined Values|Level Req.|Field description|
 |sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
 |category|"spam"|MUST|...|
 |subcategory|"malware"|MUST|...|
-|timestamp|(dynamic)|MUST|...|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Spam found with malware binary."|MUST|...|
 |source_key|"sample"|MUST|...|
 |source_value|(dynamic)|MUST|...|
@@ -551,7 +551,7 @@ Field|Defined Values|Level Req.|Field description|
 |sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
 |category|"spam"|MUST|...|
 |subcategory|"malicious content"|MUST|...|
-|timestamp|(dynamic)|MUST|...|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Website found with malicious content."|MUST|...|
 |source_key|"url"|MUST|...|
 |source_value|(dynamic)|MUST|...|
@@ -585,7 +585,7 @@ Field|Defined Values|Level Req.|Field description|
 |sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
 |category|"spam"|MUST|...|
 |subcategory|"campaign"|MUST|...|
-|timestamp|(dynamic)|MUST|...|
+|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"......."|MUST|...|
 |source_key|"...."|MUST|...|
 |source_value|(dynamic)|MUST|...|
