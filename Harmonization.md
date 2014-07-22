@@ -470,38 +470,7 @@ Field|Defined Values|Level Req.|Field description|
 ```
 =
 
-#### Case: Report a Event.
 
-**Note:** FIXME.
-
-**Dataset**
-
-Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|
-|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|\<descrever\>|
-|category|"mobile"|MUST|...|
-|subcategory|"event"|MUST|...|
-|timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"......."|MUST|...|
-|source_key|".........."|MUST|...|
-|source_value|(dynamic)|MUST|...|
-|source_asn|(dynamic)|SHOULD|...|
-
-
-**JSON Example**
-
-```
-{
- "sensor": "Suricata IDS",
- "category": "mobile",
- "subcategory": "event",
- "timestamp": "2014-05-29T23:28:09+00:00",
- "description": ".......", 
- "source_key": "...............",
- "source_value": "...................",
- "source_asn": "8982"
-
-```
 =
 ### *SPAM Reports Fields Harmonization*
 #### Case: Report a Malware binary.
@@ -512,7 +481,7 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|The sensor used to send spam malware binary data. Must be selected from "Sensor Identification" list|
 |category|"spam"|MUST|...|
 |subcategory|"malware"|MUST|...|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
@@ -548,7 +517,7 @@ Field|Defined Values|Level Req.|Field description|
 
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
-|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|The sensor used to send spam malware content data. Must be selected from "Sensor Identification" list|
 |category|"spam"|MUST|...|
 |subcategory|"malicious content"|MUST|...|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
