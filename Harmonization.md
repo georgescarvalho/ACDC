@@ -89,8 +89,10 @@
 |destination_asn|int|(dynamic)|Autonous System Number|FIXME|5656|
 |transport_protocol|string|["tcp", "udp", "icmp"]|This field is used to give infroamtion about the attack for example attack by UDP...FIXME|"tcp"|
 |protocol|string|["dns", "http, "ssh", etc..]|This field is used to give infroamtion about the attack for example attack though SSH|"http"|
-|sample_hash|string ("md5", "sha512")|(dynamic)|Hash of the sample|"f533383177f4e46605e5f30df13f8a2d"|
-|sample_filename|string|string|Filename of the sample|"antivirus.exe"|
+|sample_hash|string (SHA2)|(dynamic)|Hash of the sample|"f533383177f4e46605e5f30df13f8a2d"|
+|sample_filename|string|(dynamic)|Filename of the sample|"antivirus.exe"|
+|sample_binary|string (base64)|(dynamic)|FIXME|"0ibfLtDID2Rou944U9O72Jq0xLNsoyFa3+HmeglE2BsTJSTaISu
+zxRV6Efp+GLfC36mnE22Le"|
 |campaign|"string"|(dynamic)|FIXME|"Energy Safe Products"|
 |log|base64|(dynamic)|FIXME|"dGhpcyBpcyBhIGxvZyBsaW5lCg=="|
 |cwe|"string"|(dynamic)|FIXME|"CWE-89"|
