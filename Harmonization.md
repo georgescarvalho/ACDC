@@ -260,19 +260,16 @@ Field|Defined Values|Level Req.|Specific description|
 
 **Dataset**
 
-Field|Defined Values|Example|Level Req.|Field description|
-|---|---|---|---|---|
-|sensor|["initiative-S","DNS Traffic Sensor", "Skanna","Honeypot Sensor",(...)]||MUST|MUST|\<descrever\>|
-|category|"website"||MUST||
-|subcategory|"malicious content"||MUST||
-|timestamp|(dynamic)||MUST||
-|description|"Website found with malicious content."||MUST||
-|source_key|"url"||MUST||
-|source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MAY||
-|source_asn|(dynamic)||SHOULD||
-|protocol|"http"||MAY||
-|transport_protocol|(dynamic)||MAY||
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["initiative-S","DNS Traffic Sensor", "Skanna","Honeypot Sensor",(...)]|MUST|\<descrever\>|
+|category|"website"|MUST|.......|
+|subcategory|"malicious content"|MUST|......|
+|timestamp|(dynamic)|MUST|....|
+|description|"Website found with malicious content."|MUST|....|
+|source_key|"url"|MUST|......|
+|source_value|(dynamic)|MUST|.....|
+|source_asn|(dynamic)|SHOULD|.....|
 
 
 **JSON Example**
