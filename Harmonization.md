@@ -296,17 +296,17 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Example|Level Req.|Field description|
-|---|---|---|---|---|
-|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]||MUST|\<descrever\>
-|category|"website"||MUST||
-|subcategory|"malware"||MUST||
-|timestamp|(dynamic)||MUST||
-|description|"Website found with malware binary."||MUST||
-|source_key|"sample"||MUST||
-|source_value|(dynamic)|||MUST||
-|sample_hash|(dynamic)||MUST||
-|sample_filename|(dynamic)||MUST||
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|\<descrever\>
+|category|"website"|MUST|...|
+|subcategory|"malware"|MUST|...|
+|timestamp|(dynamic)|MUST|...|
+|description|"Website found with malware binary."|MUST|...|
+|source_key|"sample"||MUST|...|
+|source_value|(dynamic)|MUST|...|
+|sample_hash|(dynamic)|MUST|...|
+|sample_filename|(dynamic)|MUST|...|
 
 
 **JSON Example**
@@ -331,17 +331,17 @@ Field|Defined Values|Example|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Example|Level Req.|Specific description|
-|---|---|---|---|---|
-|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]||MUST|\<descrever\>
-|category|"website"||MUST||
-|subcategory|"vulnerable"||MUST||
-|timestamp|(dynamic)||MUST||
-|description|"Vulnerable website."||MUST||
-|source_key|"url"||MUST||
-|source_value|(dynamic)||MUST||
-|sample_hash|(dynamic)||MUST||
-|sample_filename|(dynamic)||MUST||
+Field|Defined Values|Level Req.|Specific description|
+|---|---|---|---|
+|sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|\<descrever\>
+|category|"website"|MUST|...|
+|subcategory|"vulnerable"|MUST|...|
+|timestamp|(dynamic)|MUST|...|
+|description|"Vulnerable website."|MUST|...|
+|source_key|"url"|MUST|...|
+|source_value|(dynamic)|MUST|...|
+|sample_hash|(dynamic)|MUST|...|
+|sample_filename|(dynamic)|MUST|...|
 
 **JSON Example**
 
