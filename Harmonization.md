@@ -83,8 +83,8 @@
 |source_value|string|(dynamic)|FIXME|"8.8.8.8"|
 |source_port|int|(dynamic)|FIXME|6375|
 |source_asn|int|(dynamic)|Autonous System Number|5454|
-|destination_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|FIXME|ip|
-|destination_value|string|(dynamic)|FIXME|8.8.4.4|
+|destination_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|FIXME|"ip"|
+|destination_value|string|(dynamic)|FIXME|"8.8.4.4"|
 |destination_port|int|(dynamic)|FIXME|80|
 |destination_asn|int|(dynamic)|Autonous System Number|FIXME|5656|
 |transport_protocol|string|["tcp", "udp", "icmp"]|This field is used to give infroamtion about the attack for example attack by UDP...FIXME|"tcp"|
