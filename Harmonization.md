@@ -67,7 +67,7 @@
 <a name="fields-list"></a>
 ### *Fields list*
 
-**Description:** this table present all fields used by all sensors to define events.
+**Description:** this table present all fields used by all sensors to define events.FIXME
 
 
 |Field|Format|Defined Values|Field Description|Example|
@@ -102,9 +102,11 @@
 
 # Sensors Harmonization
 
-**Considerations:** all harmonization for all sensores must follow this document. In the next sections is present the minimum requirements for each case/scenario but if a sensor can fill more fields from harmonization, its possible to add that too but the fiels will still be optionals (SHOULD/MAY).
+**Considerations:** all harmonization for all sensores must follow this document. In the next sections is present the minimum requirements for each case/scenario but if a sensor can fill more fields from harmonization, its possible to add that too but the fiels will still be optionals (SHOULD/MAY). FIXME
 
 ## Minimum Dataset
+
+**Considerations** this minimum dataset MUST be applied to all scenarios. FIXME
 
 **Dataset:**
 
