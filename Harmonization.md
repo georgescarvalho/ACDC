@@ -72,7 +72,7 @@
 
 |Field|Format|Defined Values|Field Description|Example|
 |---|---|---|-----------|-----------|
-|version|string|(dynamic)|FIXME|"acdc-sensors-1.0"|
+|version|string|(dynamic)|The version number of the data format used for the report|"acdc-sensors-1.0"|
 |sensor|string|[sensor list](#sensor-identification)|sensor name...|"Spambot Detector"|
 |category|string|[categories list](#events-classification)|classification of the event...|"spam"|
 |subcategory|string|[subcategories list](#events-classification)|subclassification of the event...|"bot"|
@@ -80,7 +80,7 @@
 |timestamp|datetime(ISO8601)|(dynamic)|Event timestamp|"2014-07-15T00:16:29+00:00"|
 |confidence_level|"string"|(dynamic)|FIXME|FIXME|
 |source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", "MAC", "phone number"]|FIXME|"ip"|
-|source_value|string|(dynamic)|FIXME|"8.8.8.8"|
+|source_value|string|(dynamic)|The identifier of the reported object|"8.8.8.8"|
 |source_port|int|(dynamic)|FIXME|6375|
 |source_asn|int|(dynamic)|Autonous System Number|5454|
 |destination_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|FIXME|"ip"|
@@ -92,13 +92,13 @@
 |sample_hash|string (SHA2)|(dynamic)|Hash of the sample|"f533383177f4e46605e5f30df13f8a2d"|
 |sample_filename|string|(dynamic)|Filename of the sample|"antivirus.exe"|
 |sample_binary|string (base64)|(dynamic)|FIXME|"0ibfLtDID2Rou944U9O72Jq0xLNsoyFa3+HmeglE2BsTJSTaISuzxLe"|
-|campaign|"string"|(dynamic)|FIXME|"Energy Safe Products"|
+|campaign|"string"|(dynamic)|The name or identifier of the associated campaign|"Energy Safe Products"|
 |log|base64|(dynamic)|FIXME|"dGhpcyBpcyBhIGxvZyBsaW5lCg=="|
-|cwe|"string"|(dynamic)|FIXME|"CWE-89"|
-|cve|"string"|(dynamic)|FIXME|"CVE-2014-1849"|
-|email_subject|"string"|(dynamic)|FIXME|"Buy new security products"|
-|email_body|"string"|(dynamic)|FIXME|"Content-Type: text/html; charset=UTF-8 Content-Transfer-Encoding: 7bit ..."|
-|email_header|"string"|(dynamic)|FIXME|"Return-Path: zzzzz@gmail.com X-Original-To: ..."|
+|cwe|"string"|(dynamic)|The cwe associated to the vulnerability found|"CWE-89"|
+|cve|"string"|(dynamic)|The cve associated to the vulnerability found|"CVE-2014-1849"|
+|email_subject|"string"|(dynamic)|The subject of the spam message sent|"Buy new security products"|
+|email_body|"string"|(dynamic)|The body of the spam message sent|"Content-Type: text/html; charset=UTF-8 Content-Transfer-Encoding: 7bit ..."|
+|email_header|"string"|(dynamic)|The header of the spam message sent|"Return-Path: zzzzz@gmail.com X-Original-To: ..."|
 
 
 # Sensors Harmonization
