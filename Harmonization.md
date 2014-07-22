@@ -203,7 +203,7 @@ Field|Defined Values|Level Req.|Specific description|
 }
 ```
 
-# Specific categories
+## Specific categories
 ### *DDoS Reports Fields Harmonization*
 
 #### Case: Report an Dos Attack.
@@ -251,7 +251,7 @@ Field|Defined Values|Example|Level Req.|Specific description|
 }
 ```
 
-=
+
 ### *WEBSITE Reports Fields Harmonization*
 
 #### Case: Report a Malicious Website.
