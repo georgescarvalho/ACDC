@@ -40,7 +40,7 @@
 |website|malicious content|
 |website|vulnerable|
 |||
-stflux|malicious content|
+|fastflux|malicious content|
 |||
 |mobile|malware|
 |mobile|malicious content|
@@ -56,8 +56,9 @@ stflux|malicious content|
 
 
 
-### *Field list*
-**Description:**(tentar descrever a tabela)
+<a name="fields-list"></a>
+### *Fields list*
+**Description:** this table present all fields used by all sensors to define events.
 
 |Field|Format|Defined Values|Field Description|
 |---|---|---|-----------|
@@ -89,37 +90,27 @@ stflux|malicious content|
 |Version|int|(dynamic)|...............|
 
 
-=
-**To Remove:**
-```
-|confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|Level of confidence in source **(this value should not exist because CCH is who can decide in the central point)**|
-```
-
 # Sensors Harmonization
 
-### *Minimum Dataset*
+**Considerations:** all harmonization for all sensores must follow this document. In the next sections is present the minimum requirements for each case/scenario but if a sensor can fill more fields from harmonization, its possible to add that too but the fiels will still be optionals (SHOULD/MAY).
 
-**Perspective:** 
+## Minimum Dataset
 
-** Dataset **
+**Dataset**
 
+|Field|
+|---|
+|[sensor](#fields-list)|
+|[category](#fields-list)|
+|[subcategory](#fields-list)|
+|[description](#fields-list)|
+|[timestamp](#fields-list)|
+|[source_key](#fields-list)|
+|[source_value](#fields-list)|
 
-Field|Defined Values| Example| Level Req.| Specific description|
-|---|---|---|---|------|
-|sensor|[sensor list](#sensor-identification)|"Horga"|MUST|\<descrever\>|
-|category|[categories list](#events-classification)|"website"|MUST||
-|subcategory|"bot"||MUST||
-|description|"Bot (infected system) connected to C&C server."|"Bot"|MUST||
-|timestamp|(dynamic)||MUST||
-|source_key|"ip"|"ip"|MUST||
-|source_value|(dynamic)||MUST||
+## *Commun / transversal Dataset*
 
-
-=
-
-### *Commun / transversal Dataset*
-
-#### Bot Dataset
+### Bot Dataset
 
 **Perspective:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
 
