@@ -55,9 +55,9 @@ stflux|malicious content|
 |xxxx|Bot e C&C|
 
 
-
-### *Field list*
-**Description:**(tentar descrever a tabela)
+<a name="fields-list"></a>
+### *Fields list*
+**Description:** this table present all fields used by all sensors to define events.
 
 |Field|Format|Defined Values|Field Description|
 |---|---|---|-----------|
@@ -89,17 +89,17 @@ stflux|malicious content|
 
 **Considerations:** this minimum dataset MUST be used for all events.
 
-** Dataset **
+**Dataset:**
 
-Field| Level Req.|
-|---|------|
-|sensor|MUST|
-|category|MUST|
-|subcategory|MUST|
-|description|MUST|
-|timestamp|MUST|
-|source_key|MUST|
-|source_value|MUST|
+|Field|
+|---|
+|[sensor](#fields-list)|
+|[category](#fields-list)|
+|[subcategory](#fields-list)|
+|[description](#fields-list)|
+|[timestamp](#fields-list)|
+|[source_key](#fields-list)|
+|[source_value](#fields-list)|
 
 
 ### *Commun / transversal Dataset*
