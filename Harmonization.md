@@ -179,7 +179,7 @@ Field|Defined Values|Level Req.|Specific description|
 |---|---|---|---|---|
 |sensor|[sensor list](#sensor-identification)|MUST|The sensor used to send C&C data. Must be selected from "Sensor Identification" list|
 |category|[categories list](#events-classification)|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"c&c"|MUST|\<descrever\>|
+|subcategory|"c&c"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |description|"C&C server found."|MUST|\<descrever\>|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |source_key|"ip"|MUST|\<descrever\>|
@@ -219,7 +219,7 @@ Field|Defined Values|Level Req.|Specific description|
 |---|---|---|---|
 |sensor|["DDoS Monitoring Tool","Black-Holing", (...)]|MUST|The sensor used to send DDOS data. Must be selected from "Sensor Identification" list|
 |category|"ddos"|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"flood"|MUST|\<descrever\>|
+|subcategory|"flood"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"DoS Attack from source to destination."|MUST|\<descrever\>|
 |source_key|"ip"|MUST|\<descrever\>|
@@ -265,7 +265,7 @@ Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
 |sensor|["initiative-S","DNS Traffic Sensor", "Skanna","Honeypot Sensor",(...)]|MUST|The sensor used to send malicious website data. Must be selected from "Sensor Identification" list|
 |category|"website"|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"malicious content"|MUST|......|
+|subcategory|"malicious content"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Website found with malicious content."|MUST|....|
 |source_key|"url"|MUST|......|
@@ -301,7 +301,7 @@ Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
 |sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|The sensor used to send malware binary data. Must be selected from "Sensor Identification" list|
 |category|"website"|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"malware"|MUST|...|
+|subcategory|"malware"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Website found with malware binary."|MUST|...|
 |source_key|"sample"|MUST|...|
@@ -336,7 +336,7 @@ Field|Defined Values|Level Req.|Specific description|
 |---|---|---|---|
 |sensor|["initiative-S","Horga", "Skanna","Honeypot Sensor",(...)]|MUST|The sensor used to send vulnerable website data. Must be selected from "Sensor Identification" list|
 |category|"website"|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"vulnerable"|MUST|...|
+|subcategory|"vulnerable"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Vulnerable website."|MUST|...|
 |source_key|"url"|MUST|...|
@@ -372,7 +372,7 @@ Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
 |sensor|["Passive dns sensor","DNS Traffic Sensor", "Flux Detect",(...)]|MUST|MUST|The sensor used to send fastflux malicious content data. Must be selected from "Sensor Identification" list|
 |category|"fastflux"|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"malicious content"|MUST|...|
+|subcategory|"malicious content"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"............."|MUST|...|
 |source_key|"domain"|MUST|...|
@@ -408,7 +408,7 @@ Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
 |sensor|["Suricata IDS","Conan mobile",(...)]|MUST|The sensor used to send mobile malware binary data. Must be selected from "Sensor Identification" list|
 |category|"mobile"|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"malware"|MUST|...|
+|subcategory|"malware"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Mobile found with malware binary."|MUST|...|
 |source_key|"sample"|MUST|...|
@@ -444,7 +444,7 @@ Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
 |sensor|["Suricata IDS","Conan mobile",(...)]|MUST|MUST|The sensor used to send mobile malicious content data. Must be selected from "Sensor Identification" list|
 |category|"mobile"|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"malicious content"|MUST|...|
+|subcategory|"malicious content"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Mobile found with malicious content."|MUST|...|
 |source_key|".........."|MUST|...|
@@ -483,7 +483,7 @@ Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
 |sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|The sensor used to send spam malware binary data. Must be selected from "Sensor Identification" list|
 |category|"spam"|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"malware"|MUST|...|
+|subcategory|"malware"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Spam found with malware binary."|MUST|...|
 |source_key|"sample"|MUST|...|
@@ -519,7 +519,7 @@ Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
 |sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|The sensor used to send spam malware content data. Must be selected from "Sensor Identification" list|
 |category|"spam"|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"malicious content"|MUST|...|
+|subcategory|"malicious content"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"Website found with malicious content."|MUST|...|
 |source_key|"url"|MUST|...|
@@ -553,7 +553,7 @@ Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
 |sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|The sensor used to send spam campaign data. Must be selected from "Sensor Identification" list
 |category|"spam"|MUST|The category of sensor. Must be selected from "Events Classification" list|
-|subcategory|"campaign"|MUST|...|
+|subcategory|"campaign"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |description|"......."|MUST|...|
 |source_key|"...."|MUST|...|
