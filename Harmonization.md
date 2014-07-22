@@ -224,12 +224,11 @@ Field|Defined Values|Level Req.|Specific description|
 |source_key|"ip"|MUST|\<descrever\>|
 |source_value|(dynamic)|MUST|\<descrever\>|
 |source_port|(dynamic)|MUST|\<descrever\>|
-|source_asn|(dynamic)|SHOULD|\<descrever\>|
 |destination_key|"ip"|MUST|\<descrever\>|
 |destination_value|(dynamic)|MUST|\<descrever\>|
 |destination_port|(dynamic)|MUST|\<descrever\>|
-|destination_asn|(dynamic)|MAY|\<descrever\>|
 |transport_protocol|(dynamic)|MUST|\<descrever\>|
+|source_asn|(dynamic)|SHOULD|\<descrever\>|
 
 
 **JSON Example**
@@ -244,12 +243,11 @@ Field|Defined Values|Level Req.|Specific description|
  "source_key": "ip",
  "source_value": "192.135.6.215",
  "source_port": "53",
- "source_asn": "1930",
  "destination_key": "ip",
  "destination_value": "192.80.6.215", 
  "destination_port": "22",
- "destination_asn": "19165",
- "transport_protocol": "udp"
+ "transport_protocol": "udp",
+  "source_asn": "1930"
 }
 ```
 
