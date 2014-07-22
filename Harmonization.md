@@ -136,7 +136,7 @@ Field|Defined Values| Level Req.| Specific description|
 |sensor|[sensor list](#sensor-identification)|MUST|The sensor used to send bot data. Must be selected from "Sensor Identification" list|
 |category|[categories list](#events-classification)|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"bot"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
-|description|"Bot (infected system) connected to C&C server."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processin|
+|description|"Bot (infected system) connected to C&C server."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |source_key|"ip"|MUST|\<descrever\>|
 |source_value|(dynamic)|MUST|\<descrever\>|
@@ -180,7 +180,7 @@ Field|Defined Values|Level Req.|Specific description|
 |sensor|[sensor list](#sensor-identification)|MUST|The sensor used to send C&C data. Must be selected from "Sensor Identification" list|
 |category|[categories list](#events-classification)|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"c&c"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
-|description|"C&C server found."|MUST|\<descrever\>|
+|description|"C&C server found."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
 |source_key|"ip"|MUST|\<descrever\>|
 |source_value|(dynamic)|MUST|\<descrever\>|
@@ -221,7 +221,7 @@ Field|Defined Values|Level Req.|Specific description|
 |category|"ddos"|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"flood"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"DoS Attack from source to destination."|MUST|\<descrever\>|
+|description|"DoS Attack from source to destination."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |source_key|"ip"|MUST|\<descrever\>|
 |source_value|(dynamic)|MUST|\<descrever\>|
 |source_port|(dynamic)|MUST|\<descrever\>|
@@ -267,7 +267,7 @@ Field|Defined Values|Level Req.|Field description|
 |category|"website"|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"malicious content"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"Website found with malicious content."|MUST|....|
+|description|"Website found with malicious content."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |source_key|"url"|MUST|......|
 |source_value|(dynamic)|MUST|.....|
 |source_asn|(dynamic)|SHOULD|.....|
@@ -303,7 +303,7 @@ Field|Defined Values|Level Req.|Field description|
 |category|"website"|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"malware"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"Website found with malware binary."|MUST|...|
+|description|"Website found with malware binary."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |source_key|"sample"|MUST|...|
 |source_value|(dynamic)|MUST|...|
 |sample_hash|(dynamic)|MUST|...|
@@ -338,7 +338,7 @@ Field|Defined Values|Level Req.|Specific description|
 |category|"website"|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"vulnerable"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"Vulnerable website."|MUST|...|
+|description|"Vulnerable website."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |source_key|"url"|MUST|...|
 |source_value|(dynamic)|MUST|...|
 |sample_hash|(dynamic)|MUST|...|
@@ -374,7 +374,7 @@ Field|Defined Values|Level Req.|Field description|
 |category|"fastflux"|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"malicious content"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"............."|MUST|...|
+|description|"............."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |source_key|"domain"|MUST|...|
 |source_value|(dynamic)|MUST|...|
 |source_asn|(dynamic)|SHOULD|...|
@@ -410,7 +410,7 @@ Field|Defined Values|Level Req.|Field description|
 |category|"mobile"|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"malware"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"Mobile found with malware binary."|MUST|...|
+|description|"Mobile found with malware binary."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |source_key|"sample"|MUST|...|
 |source_value|(dynamic)|MUST|...|
 |sample_hash|(dynamic)|MUST|...|
@@ -446,7 +446,7 @@ Field|Defined Values|Level Req.|Field description|
 |category|"mobile"|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"malicious content"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"Mobile found with malicious content."|MUST|...|
+|description|"Mobile found with malicious content."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |source_key|".........."|MUST|...|
 |source_value|(dynamic)|MUST|...|
 |source_asn|(dynamic)|SHOULD|...|
@@ -485,7 +485,7 @@ Field|Defined Values|Level Req.|Field description|
 |category|"spam"|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"malware"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"Spam found with malware binary."|MUST|...|
+|description|"Spam found with malware binary."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |source_key|"sample"|MUST|...|
 |source_value|(dynamic)|MUST|...|
 |sample_hash|(dynamic)|MUST|...|
@@ -521,7 +521,7 @@ Field|Defined Values|Level Req.|Field description|
 |category|"spam"|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"malicious content"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"Website found with malicious content."|MUST|...|
+|description|"Website found with malicious content."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |source_key|"url"|MUST|...|
 |source_value|(dynamic)|MUST|...|
 |source_asn|(dynamic)|SHOULD|...|
@@ -555,7 +555,7 @@ Field|Defined Values|Level Req.|Field description|
 |category|"spam"|MUST|The category of sensor. Must be selected from "Events Classification" list|
 |subcategory|"campaign"|MUST|The category of the report. This links the report to one of ACDC's schemata. Must be selested from "Events Classification" list|
 |timestamp|(dynamic)|MUST|The timestamp when the reported observation was detected|
-|description|"......."|MUST|...|
+|description|"......."|MUST|Little description of the event. This is a free text field characterising the report that should be used for a human readable description rather than for automatic processing|
 |source_key|"...."|MUST|...|
 |source_value|(dynamic)|MUST|...|
 |source_asn|(dynamic)|SHOULD|...|
