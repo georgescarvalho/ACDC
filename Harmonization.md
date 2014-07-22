@@ -212,22 +212,22 @@ Field|Defined Values|Level Req.|Specific description|
 
 **Dataset**
 
-Field|Defined Values|Example|Level Req.|Specific description|
-|---|---|---|---|---|
-|sensor|["DDoS Monitoring Tool","Black-Holing", (...)] |MUST|\<descrever\>|
-|category|"ddos"||MUST||
-|subcategory|"flood"||MUST||
-|timestamp|(dynamic)||MUST||
-|description|"DoS Attack from source to destination."||MUST||
-|source_key|"ip"||MUST||
-|source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MUST||
-|source_asn|(dynamic)||SHOULD||
-|destination_key|"ip"||MUST||
-|destination_value|(dynamic)||MUST||
-|destination_port|(dynamic)||MUST||
-|destination_asn|(dynamic)||MAY||
-|transport_protocol|(dynamic)||MUST||
+Field|Defined Values|Level Req.|Specific description|
+|---|---|---|---|
+|sensor|["DDoS Monitoring Tool","Black-Holing", (...)]|MUST|\<descrever\>|
+|category|"ddos"|MUST|\<descrever\>|
+|subcategory|"flood"|MUST|\<descrever\>|
+|timestamp|(dynamic)|MUST|\<descrever\>|
+|description|"DoS Attack from source to destination."|MUST|\<descrever\>|
+|source_key|"ip"|MUST|\<descrever\>|
+|source_value|(dynamic)|MUST|\<descrever\>|
+|source_port|(dynamic)|MUST|\<descrever\>|
+|source_asn|(dynamic)|SHOULD|\<descrever\>|
+|destination_key|"ip"|MUST|\<descrever\>|
+|destination_value|(dynamic)|MUST|\<descrever\>|
+|destination_port|(dynamic)|MUST|\<descrever\>|
+|destination_asn|(dynamic)|MAY|\<descrever\>|
+|transport_protocol|(dynamic)|MUST|\<descrever\>|
 
 
 **JSON Example**
