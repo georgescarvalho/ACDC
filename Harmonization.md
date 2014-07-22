@@ -5,27 +5,27 @@
 |Category|Sensor|Entity|
 |---|---|---|
 |ddos|DDoS Monitoring Tool|IF-IS|
-|ddos| Black-Holing| DE-CIX |
+|ddos|Black-Holing| DE-CIX |
 |ddos|(...) | (...)|
 ||||
-|website|initiative-S|ECO|
+|website|Initiative-S|ECO|
 |website|Horga|ISCTI|
 |website|Skanna|INTECO|
 |website|Honeypot Sensor|CARNET|
 |website| (...) | (...)|
 ||||
-|fasstflux|Passive dns sensor| CARNET|
+|fasstflux|Passive DNS Sensor| CARNET|
 |fasstflux|DNS Traffic Sensor| ATOS|
 |fasstflux|Flux Detect|INTECO|
 |fasstflux| (...) | (...)|
 ||||
 |mobile|Suricata IDS|XLAB|
-|mobile|Conan mobile|INTECO|
+|mobile|Conan Mobile|INTECO|
 |mobile| (...) | (...)|
 ||||
 |spam|Spamtrap|CARNET|
-|spam|Spambot detector|TID|
-|spam|Spam analysis tool|CERT-RO|
+|spam|Spambot Detector|TID|
+|spam|Spam Analysis Tool|CERT-RO|
 |spam|AHPS|ATOS|
 |spam| (...) | (...)|
 
@@ -70,29 +70,29 @@
 
 **WARNING**: aqui é que deve ter exemplos para as pessoas perceberem o formato.
 
-|Field|Format|Defined Values|Field Description|
+|Field|Format|Defined Values|Field Description|Example|
 |---|---|---|-----------|
-|sensor|string|[sensor list](#sensor-identification)|sensor name...|
-|category|string|[categories list](#events-classification)|classification of the event...|
-|subcategory|string|[subcategories list](#events-classification)|subclassification of the event...|
-|description|string|(dynamic)|Free text characterising the report and should be used for human readable|
-|timestamp|datetime(ISO8601)|(dynamic)|Event timestamp|
-|Confidence_level|"string"|(dynamic)|.................|
-|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", "MAC", "phone number"]|....|
-|source_value|string|(dynamic)|...|
-|source_port|int|(dynamic)|-|
-|source_asn|int|(dynamic)|Autonous System Number|
-|destination_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|....|
-|destination_value|string|(dynamic)|...|
-|destination_port|int|(dynamic)|-|
-|destination_asn|int|(dynamic)|Autonous System Number|
-|transport_protocol|string|["tcp", "udp", "icmp"]|This field is used to give infroamtion about the attack for example attack by UDP...|
-|protocol|string|["dns", "http, "ssh", etc..]|This field is used to give infroamtion about the attack for example attack though SSH|
-|sample_hash|string ("md5", "sha512")|(dynamic)|Hash of the sample|
-|sample_filename|string|string|Filename of the sample|
-|Campaign|"string"|(dynamic)|................|
-|Log|base64|(dynamic)|................|
-|CWE|"string"|(dynamic)|............|
+|sensor|string|[sensor list](#sensor-identification)|sensor name...|"Spambot Detector"|
+|category|string|[categories list](#events-classification)|classification of the event...|"spam"|
+|subcategory|string|[subcategories list](#events-classification)|subclassification of the event...|"bot"|
+|description|string|(dynamic)|Free text characterising the report and should be used for human readable|"Bot (infected system) connected to C&C server."|
+|timestamp|datetime(ISO8601)|(dynamic)|Event timestamp|"2014-07-15T00:16:29+00:00"|
+|Confidence_level|"string"|(dynamic)|FIXME|FIXME|
+|source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", "MAC", "phone number"]|FIXME|"ip"|
+|source_value|string|(dynamic)|FIXME|"8.8.8.8"|
+|source_port|int|(dynamic)|FIXME|6375|
+|source_asn|int|(dynamic)|Autonous System Number|5454|
+|destination_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei"]|FIXME|ip|
+|destination_value|string|(dynamic)|FIXME|8.8.4.4|
+|destination_port|int|(dynamic)|FIXME|80|
+|destination_asn|int|(dynamic)|Autonous System Number|FIXME|5656|
+|transport_protocol|string|["tcp", "udp", "icmp"]|This field is used to give infroamtion about the attack for example attack by UDP...FIXME|"tcp"|
+|protocol|string|["dns", "http, "ssh", etc..]|This field is used to give infroamtion about the attack for example attack though SSH|"http"|
+|sample_hash|string ("md5", "sha512")|(dynamic)|Hash of the sample|"f533383177f4e46605e5f30df13f8a2d"|
+|sample_filename|string|string|Filename of the sample|"antivirus.exe"|
+|Campaign|"string"|(dynamic)|FIXME|"Energy Safe Products"|
+|Log|base64|(dynamic)|FIXME|"dGhpcyBpcyBhIGxvZyBsaW5lCg=="|
+|CWE|"string"|(dynamic)|FIXME|
 |CVE|"string"|(dynamic)|............|
 |Email_subject|"string"|(dynamic)|............|
 |Email_body|"string"|(dynamic)|............|
