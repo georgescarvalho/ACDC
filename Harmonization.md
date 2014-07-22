@@ -40,7 +40,7 @@
 |website|malicious content|
 |website|vulnerable|
 |||
-fastflux|malicious content|
+stflux|malicious content|
 |||
 |mobile|malware|
 |mobile|malicious content|
@@ -55,9 +55,9 @@ fastflux|malicious content|
 |xxxx|Bot e C&C|
 
 
-<a name="fields-list"></a>
-### *Fields list*
-**Description:** this table present all fields used by all sensors to define events.
+
+### *Field list*
+**Description:**(tentar descrever a tabela)
 
 |Field|Format|Defined Values|Field Description|
 |---|---|---|-----------|
@@ -66,6 +66,7 @@ fastflux|malicious content|
 |subcategory|string|[subcategories list](#events-classification)|subclassification of the event...|
 |description|string|(dynamic)|Free text characterising the report and should be used for human readable|
 |timestamp|datetime(ISO8601)|(dynamic)|Event timestamp|
+|Confidence_level|"string"|(dynamic)|.................|
 |source_key|string|["ip", "domain", "url", "email", "uri", "sample", "imei", "MAC", "phone number"]|....|
 |source_value|string|(dynamic)|...|
 |source_port|int|(dynamic)|-|
@@ -78,33 +79,47 @@ fastflux|malicious content|
 |protocol|string|["dns", "http, "ssh", etc..]|This field is used to give infroamtion about the attack for example attack though SSH|
 |sample_hash|string ("md5", "sha512")|(dynamic)|Hash of the sample|
 |sample_filename|string|string|Filename of the sample|
+|Campaign|"string"|(dynamic)|................|
+|Log|base64|(dynamic)|................|
+|CWE|"string"|(dynamic)|............|
+|CVE|"string"|(dynamic)|............|
+|Email_subject|"string"|(dynamic)|............|
+|Email_body|"string"|(dynamic)|............|
+|Email_header|"string"|(dynamic)|............|
+|Version|int|(dynamic)|...............|
 
 
+=
+**To Remove:**
+```
+|confidence|string|[check sensors confidence values](http://nowhere.com)|MUST|TBD|Level of confidence in source **(this value should not exist because CCH is who can decide in the central point)**|
+```
 
 # Sensors Harmonization
 
-**Considerations:** all harmonization for all sensores must follow this document. In the next sections is present the minimum requirements for each case/scenario but if a sensor can fill more fields from harmonization, its possible to add that too but the fiels will still be optionals (SHOULD/MAY).
+### *Minimum Dataset*
 
-## *Minimum Dataset*
+**Perspective:** 
 
-**Considerations:** this minimum dataset MUST be used for all events.
-
-**Dataset:**
-
-|Field|
-|---|
-|[sensor](#fields-list)|
-|[category](#fields-list)|
-|[subcategory](#fields-list)|
-|[description](#fields-list)|
-|[timestamp](#fields-list)|
-|[source_key](#fields-list)|
-|[source_value](#fields-list)|
+** Dataset **
 
 
-## *Commun / transversal Dataset*
+Field|Defined Values| Example| Level Req.| Specific description|
+|---|---|---|---|------|
+|sensor|[sensor list](#sensor-identification)|"Horga"|MUST|\<descrever\>|
+|category|[categories list](#events-classification)|"website"|MUST||
+|subcategory|"bot"||MUST||
+|description|"Bot (infected system) connected to C&C server."|"Bot"|MUST||
+|timestamp|(dynamic)||MUST||
+|source_key|"ip"|"ip"|MUST||
+|source_value|(dynamic)||MUST||
 
-### Bot Dataset
+
+=
+
+### *Commun / transversal Dataset*
+
+#### Bot Dataset
 
 **Perspective:** Bot ip must be inserted in source_value and C&C ip must be inserted in destination_value.
 
@@ -112,16 +127,18 @@ fastflux|malicious content|
 
 Field|Defined Values| Example| Level Req.| Specific description|
 |---|---|---|---|------|
-|sensor|[sensor list](#sensor-identification)|"Horga"|MUST|..descrever..|
+|sensor|[sensor list](#sensor-identification)|"Horga"|MUST|\<descrever\>|
 |category|[categories list](#events-classification)|"website"|MUST||
 |subcategory|"bot"||MUST||
 |description|"Bot (infected system) connected to C&C server."||MUST||
 |timestamp|(dynamic)||MUST||
 |source_key|"ip"|MUST||
 |source_value|(dynamic)||MUST||
+|source_port|(dynamic)||MAY||
+|source_asn|(dynamic)||SHOULD||
 |destination_key|"ip"||MUST||
 |destination_value|(dynamic)||MUST||
-|source_asn|(dynamic)||SHOULD||
+|destination_port|(dynamic)||MAY||
 |destination_asn|(dynamic)||SHOULD||
 |protocol|(dynamic)|SHOULD||
 |transport_protocol|(dynamic)||SHOULD||
@@ -138,6 +155,7 @@ Field|Defined Values| Example| Level Req.| Specific description|
  "timestamp": "2014-07-15T00:16:29+00:00",
  "source_key": "ip",
  "source_value": "192.135.6.215",
+ "source_port": "53653",
  "source_asn": "1930",
  "destination_key": "ip",
  "destination_value": "192.80.6.215", 
@@ -150,7 +168,7 @@ Field|Defined Values| Example| Level Req.| Specific description|
 
 
 
-### *C&C Detection Reports Fields Harmonization*
+#### *C&C Detection Reports Fields Harmonization*
 
 **Perspective:** C&C ip must be inserted in source_value.
 
