@@ -72,6 +72,7 @@
 
 |Field|Format|Defined Values|Field Description|Example|
 |---|---|---|-----------|-----------|
+|version|int|(dynamic)|FIXME|"acdc-sensors-1.0"|
 |sensor|string|[sensor list](#sensor-identification)|sensor name...|"Spambot Detector"|
 |category|string|[categories list](#events-classification)|classification of the event...|"spam"|
 |subcategory|string|[subcategories list](#events-classification)|subclassification of the event...|"bot"|
@@ -97,7 +98,6 @@
 |email_subject|"string"|(dynamic)|FIXME|"Buy new security products"|
 |email_body|"string"|(dynamic)|FIXME|"Content-Type: text/html; charset=UTF-8 Content-Transfer-Encoding: 7bit <p>It is not supposed to..."|
 |email_header|"string"|(dynamic)|FIXME|"Return-Path: zzzzz@gmail.com X-Original-To: ..."|
-|version|int|(dynamic)|FIXME|"acdc-sensors-1.0"|
 
 
 # Sensors Harmonization
