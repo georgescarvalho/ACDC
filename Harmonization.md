@@ -14,10 +14,10 @@
 |website|Honeypot Sensor|CARNET|
 |website| (...) | (...)|
 ||||
-|fasstflux|Passive DNS Sensor| CARNET|
-|fasstflux|DNS Traffic Sensor| ATOS|
-|fasstflux|Flux Detect|INTECO|
-|fasstflux| (...) | (...)|
+|fastflux|Passive DNS Sensor| CARNET|
+|fastflux|DNS Traffic Sensor| ATOS|
+|fastflux|Flux Detect|INTECO|
+|fastflux| (...) | (...)|
 ||||
 |mobile|Suricata IDS|XLAB|
 |mobile|Conan Mobile|INTECO|
