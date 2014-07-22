@@ -90,14 +90,14 @@
 |protocol|string|["dns", "http, "ssh", etc..]|This field is used to give infroamtion about the attack for example attack though SSH|"http"|
 |sample_hash|string ("md5", "sha512")|(dynamic)|Hash of the sample|"f533383177f4e46605e5f30df13f8a2d"|
 |sample_filename|string|string|Filename of the sample|"antivirus.exe"|
-|Campaign|"string"|(dynamic)|FIXME|"Energy Safe Products"|
-|Log|base64|(dynamic)|FIXME|"dGhpcyBpcyBhIGxvZyBsaW5lCg=="|
-|CWE|"string"|(dynamic)|FIXME|"CWE-89"|
-|CVE|"string"|(dynamic)|FIXME|"CVE-2014-1849"|
-|Email_subject|"string"|(dynamic)|FIXME|"Buy new security products"|
-|Email_body|"string"|(dynamic)|FIXME|"Content-Type: text/html; charset=UTF-8 Content-Transfer-Encoding: 7bit <p>It is not supposed to..."|
-|Email_header|"string"|(dynamic)|FIXME|"Return-Path: zzzzz@gmail.com X-Original-To: ..."|
-|Version|int|(dynamic)|FIXME|"acdc-sensors-1.0"|
+|campaign|"string"|(dynamic)|FIXME|"Energy Safe Products"|
+|log|base64|(dynamic)|FIXME|"dGhpcyBpcyBhIGxvZyBsaW5lCg=="|
+|cwe|"string"|(dynamic)|FIXME|"CWE-89"|
+|cve|"string"|(dynamic)|FIXME|"CVE-2014-1849"|
+|email_subject|"string"|(dynamic)|FIXME|"Buy new security products"|
+|email_body|"string"|(dynamic)|FIXME|"Content-Type: text/html; charset=UTF-8 Content-Transfer-Encoding: 7bit <p>It is not supposed to..."|
+|email_header|"string"|(dynamic)|FIXME|"Return-Path: zzzzz@gmail.com X-Original-To: ..."|
+|version|int|(dynamic)|FIXME|"acdc-sensors-1.0"|
 
 
 # Sensors Harmonization
