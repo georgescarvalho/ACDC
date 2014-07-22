@@ -35,24 +35,32 @@
 |Category|SubCategory|
 |---|---|
 |ddos|flood|
+|ddos|bot|
+|ddos|c&c|
 |||
 |website|malware|
 |website|malicious content|
 |website|vulnerable|
+|website|bot|
+|website|c&c|
 |||
 |fastflux|malicious content|
+|fastflux|bot|
+|fastflux|c&c|
 |||
 |mobile|malware|
 |mobile|malicious content|
 |mobile|SMS Hijack|
 |mobile|MAC Changed (TBD)|
 |mobile|IMEI Changed (TBD)|
+|mobile|bot|
+|mobile|c&c|
 |||
 |spam|malware|
 |spam|malicious content|
 |spam|campaign|
-|||
-|xxxx|Bot e C&C|
+|spam|bot|
+|spam|c&c|
 
 
 
