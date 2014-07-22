@@ -370,16 +370,14 @@ Field|Defined Values|Level Req.|Specific description|
 Field|Defined Values|Level Req.|Field description|
 |---|---|---|---|
 |sensor|["Passive dns sensor","DNS Traffic Sensor", "Flux Detect",(...)]|MUST|MUST|\<descrever\>|
-|category|"fastflux"|MUST||
-|subcategory|"malicious content"|MUST||
-|timestamp|(dynamic)|MUST||
-|description|"............."|MUST||
-|source_key|"domain"||MUST||
-|source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MAY||
-|source_asn|(dynamic)||SHOULD||
-|protocol|"http"|MAY||
-|transport_protocol|(dynamic)||MAY||
+|category|"fastflux"|MUST|...|
+|subcategory|"malicious content"|MUST|...|
+|timestamp|(dynamic)|MUST|...|
+|description|"............."|MUST|...|
+|source_key|"domain"|MUST|...|
+|source_value|(dynamic)|MUST|...|
+|source_asn|(dynamic)|SHOULD|...|
+
 
 
 **JSON Example**
@@ -393,10 +391,8 @@ Field|Defined Values|Level Req.|Field description|
  "description": "...........", 
  "source_key": "`domain`",
  "source_value": "........",
- "source_port": "443",
- "source_asn": "8982",
- "protocol": "http",
- "transport_protocol": "tcp"
+ "source_asn": "8982"
+
 }
 ```
 =
@@ -407,17 +403,17 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Example|Level Req.|Field description|
-|---|---|---|---|---|
-|sensor|["Suricata IDS","Conan mobile",(...)]||MUST|\<descrever\>
-|category|"mobile"||MUST||
-|subcategory|"malware"||MUST||
-|timestamp|(dynamic)||MUST||
-|description|"Mobile found with malware binary."||MUST||
-|source_key|"sample"||MUST||
-|source_value|(dynamic)||MUST||
-|sample_hash|(dynamic)||MUST||
-|sample_filename|(dynamic)||MUST||
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|\<descrever\>
+|category|"mobile"|MUST|...|
+|subcategory|"malware"|MUST|...|
+|timestamp|(dynamic)|MUST|...|
+|description|"Mobile found with malware binary."|MUST|...|
+|source_key|"sample"|MUST|...|
+|source_value|(dynamic)|MUST|...|
+|sample_hash|(dynamic)|MUST|...|
+|sample_filename|(dynamic)|MUST|...|
 
 
 **JSON Example**
@@ -444,18 +440,16 @@ Field|Defined Values|Example|Level Req.|Field description|
 **Dataset**
 
 Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|---|
-|sensor|["Suricata IDS","Conan mobile",(...)]||MUST|MUST|\<descrever\>|
-|category|"mobile"||MUST||
-|subcategory|"malicious content"||MUST||
-|timestamp|(dynamic)||MUST||
-|description|"Mobile found with malicious content."||MUST||
-|source_key|".........."||MUST||
-|source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MAY||
-|source_asn|(dynamic)||SHOULD||
-|protocol|"......."||MAY||
-|transport_protocol||(dynamic)|MAY||
+|---|---|---|---|
+|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|MUST|\<descrever\>|
+|category|"mobile"|MUST|...|
+|subcategory|"malicious content"|MUST|...|
+|timestamp|(dynamic)|MUST|...|
+|description|"Mobile found with malicious content."|MUST|...|
+|source_key|".........."|MUST|...|
+|source_value|(dynamic)|MUST|...|
+|source_asn|(dynamic)|SHOULD|...|
+
 
 
 **JSON Example**
@@ -469,10 +463,8 @@ Field|Defined Values|Level Req.|Field description|
  "description": "Mobile found with malicious content.", 
  "source_key": "...............",
  "source_value": "...................",
- "source_port": "443",
- "source_asn": "8982",
- "protocol": "..........",
- "transport_protocol": "........."
+ "source_asn": "8982"
+
 }
 ```
 =
@@ -484,18 +476,15 @@ Field|Defined Values|Level Req.|Field description|
 **Dataset**
 
 Field|Defined Values|Level Req.|Field description|
-|---|---|---|---|---|
-|sensor|["Suricata IDS","Conan mobile",(...)]||MUST|\<descrever\>|
-|category|"mobile"||MUST||
-|subcategory|"event"||MUST||
-|timestamp|(dynamic)||MUST||
-|description|"......."||MUST||
-|source_key|".........."||MUST||
-|source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MAY||
-|source_asn|(dynamic)||SHOULD||
-|protocol|"......."||MAY||
-|transport_protocol|(dynamic)||MAY||
+|---|---|---|---|
+|sensor|["Suricata IDS","Conan mobile",(...)]|MUST|\<descrever\>|
+|category|"mobile"|MUST|...|
+|subcategory|"event"|MUST|...|
+|timestamp|(dynamic)|MUST|...|
+|description|"......."|MUST|...|
+|source_key|".........."|MUST|...|
+|source_value|(dynamic)|MUST|...|
+|source_asn|(dynamic)|SHOULD|...|
 
 
 **JSON Example**
@@ -509,11 +498,8 @@ Field|Defined Values|Level Req.|Field description|
  "description": ".......", 
  "source_key": "...............",
  "source_value": "...................",
- "source_port": "443",
- "source_asn": "8982",
- "protocol": "..........",
- "transport_protocol": "........."
-}
+ "source_asn": "8982"
+
 ```
 =
 ### *SPAM Reports Fields Harmonization*
@@ -523,17 +509,17 @@ Field|Defined Values|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Example|Level Req.|Field description|
-|---|---|---|---|---|
-|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]||MUST|\<descrever\>
-|category|"spam"||MUST||
-|subcategory|"malware"||MUST||
-|timestamp|(dynamic)||MUST||
-|description|"Spam found with malware binary."||MUST||
-|source_key|"sample"||MUST||
-|source_value|(dynamic)||MUST||
-|sample_hash|(dynamic)||MUST||
-|sample_filename|(dynamic)||MUST||
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
+|category|"spam"|MUST|...|
+|subcategory|"malware"|MUST|...|
+|timestamp|(dynamic)|MUST|...|
+|description|"Spam found with malware binary."|MUST|...|
+|source_key|"sample"|MUST|...|
+|source_value|(dynamic)|MUST|...|
+|sample_hash|(dynamic)|MUST|...|
+|sample_filename|(dynamic)|MUST|...|
 
 
 **JSON Example**
@@ -559,19 +545,16 @@ Field|Defined Values|Example|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Example|Level Req.|Field description|
-|---|---|---|---|---|
-|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]||MUST|\<descrever\>
-|category|"spam"||MUST||
-|subcategory|"malicious content"||MUST||
-|timestamp|(dynamic)||MUST||
-|description|"Website found with malicious content."||MUST||
-|source_key|"url"||MUST||
-|source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MAY||
-|source_asn|(dynamic)||SHOULD||
-|protocol|"http"|MAY||
-|transport_protocol|(dynamic)||MAY||
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
+|category|"spam"|MUST|...|
+|subcategory|"malicious content"|MUST|...|
+|timestamp|(dynamic)|MUST|...|
+|description|"Website found with malicious content."|MUST|...|
+|source_key|"url"|MUST|...|
+|source_value|(dynamic)|MUST|...|
+|source_asn|(dynamic)|SHOULD|...|
 
 
 **JSON Example**
@@ -585,10 +568,8 @@ Field|Defined Values|Example|Level Req.|Field description|
  "description": "spam found with malicious content.", 
  "source_key": "url",
  "source_value": "https://xasdda.xxxxx.com/pub.php",
- "source_port": "443",
- "source_asn": "8982",
- "protocol": "http",
- "transport_protocol": "tcp"
+ "source_asn": "8982"
+
 }
 ```
 
@@ -598,19 +579,16 @@ Field|Defined Values|Example|Level Req.|Field description|
 
 **Dataset**
 
-Field|Defined Values|Example|Level Req.|Field description|
-|---|---|---|---|---|
-|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]||MUST|\<descrever\>
-|category|"spam"||MUST||
-|subcategory|"campaign"||MUST||
-|timestamp|(dynamic)||MUST||
-|description|"......."||MUST||
-|source_key|"...."||MUST||
-|source_value|(dynamic)||MUST||
-|source_port|(dynamic)||MAY||
-|source_asn|(dynamic)||SHOULD||
-|protocol|"http"||MAY||
-|transport_protocol|(dynamic)||MAY||
+Field|Defined Values|Level Req.|Field description|
+|---|---|---|---|
+|sensor|["Spamtrap","Spambot detector","Spam analysis tool","AHPS"(...)]|MUST|\<descrever\>
+|category|"spam"|MUST|...|
+|subcategory|"campaign"|MUST|...|
+|timestamp|(dynamic)|MUST|...|
+|description|"......."|MUST|...|
+|source_key|"...."|MUST|...|
+|source_value|(dynamic)||MUST|...|
+|source_asn|(dynamic)||SHOULD|...|
 
 
 **JSON Example**
@@ -624,11 +602,8 @@ Field|Defined Values|Example|Level Req.|Field description|
  "description": "......", 
  "source_key": "...",
  "source_value": "https://xasdda.xxxxx.com/pub.php",
- "source_port": "443",
- "source_asn": "8982",
- "protocol": "http",
- "transport_protocol": "tcp"
-}
+ "source_asn": "8982"
+
 ```
 
 =
