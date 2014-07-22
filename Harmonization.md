@@ -71,7 +71,7 @@
 **WARNING**: aqui é que deve ter exemplos para as pessoas perceberem o formato.
 
 |Field|Format|Defined Values|Field Description|Example|
-|---|---|---|-----------|
+|---|---|---|-----------|-----------|
 |sensor|string|[sensor list](#sensor-identification)|sensor name...|"Spambot Detector"|
 |category|string|[categories list](#events-classification)|classification of the event...|"spam"|
 |subcategory|string|[subcategories list](#events-classification)|subclassification of the event...|"bot"|
