@@ -304,7 +304,7 @@ Field|Defined Values|Level Req.|Field description|
 |subcategory|"malware"|MUST|...|
 |timestamp|(dynamic)|MUST|...|
 |description|"Website found with malware binary."|MUST|...|
-|source_key|"sample"||MUST|...|
+|source_key|"sample"|MUST|...|
 |source_value|(dynamic)|MUST|...|
 |sample_hash|(dynamic)|MUST|...|
 |sample_filename|(dynamic)|MUST|...|
